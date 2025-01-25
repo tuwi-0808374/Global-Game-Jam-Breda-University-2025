@@ -11,12 +11,13 @@ public class BubbleComponent : MonoBehaviour
     private float startbounds = 890;
     private float upwardsspeed = 15f;
 
+
     public Button button;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         upwardsspeed = upwardsspeed + Random.Range(-3,7);
-        rt.anchoredPosition = new Vector3(Random.Range(-startbounds,startbounds),-417,0);
+        // rt.anchoredPosition = new Vector3(Random.Range(left.position.x,right.position.x),-417,0);
 
         StartCoroutine(LifeSpan());
     }
