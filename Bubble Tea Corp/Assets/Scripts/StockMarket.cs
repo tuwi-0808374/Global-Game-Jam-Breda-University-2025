@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
@@ -5,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.VirtualTexturing;
 using UnityEngine.UI;
+using static StockMarket;
 
 public class StockMarket : MonoBehaviour
 {
@@ -60,6 +62,13 @@ public class StockMarket : MonoBehaviour
 
         // Start updating stock prices
         InvokeRepeating("UpdateStockPrices", 2.0f, 5.0f);
+
+        //Initialize stock history
+        for (int i = 0; i <= Stocks.Count; i++)
+        {
+            StockHistory.Add(new List<float>());
+            StockHistory[i].Add(Stocks[i].CurrentPrice);
+        }
     }
 
     void PopulateStockList()
