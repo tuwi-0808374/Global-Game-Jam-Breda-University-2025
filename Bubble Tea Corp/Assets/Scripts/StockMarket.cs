@@ -185,6 +185,7 @@ public class StockMarket : MonoBehaviour
     }
     public void UpdateStock(string StockName, StockMods ValueMod, float Value, StockMods ChangeRateMod, float ChangeRate, StockMods DeltaMod, float ChangeRateDelta)
     {
+        Debug.Log("dsfdsfs " + StockName);
         // Find the stock you want to update
         int TargetStockIndex = Stocks.FindIndex(x => x.Name == StockName);
         Stock TargetStock = Stocks[TargetStockIndex];

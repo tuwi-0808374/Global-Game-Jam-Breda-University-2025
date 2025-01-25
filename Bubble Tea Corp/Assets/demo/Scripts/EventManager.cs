@@ -245,6 +245,7 @@ public class EventManager : MonoBehaviour
         {
             // Get all the stocks that are in the game
             // Update the values of the stocks that the event will invluence
+            
             stockMarket.UpdateStock(stock.name, stock.valueMod, stock.value, stock.changeRateMod, stock.changeRate, stock.DeltaMod, stock.changeRateDelta);
 
         }
