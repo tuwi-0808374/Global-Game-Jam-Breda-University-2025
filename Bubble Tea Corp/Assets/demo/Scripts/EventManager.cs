@@ -7,14 +7,21 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
+public class Choice
+{
+    public string name;
+    public Image image;
+    public float weight;
+    public List<Event> events;
+}
+
+[System.Serializable]
 public class Event
 {
     public string name;
     public float weight;
 
-    public int eventType;
-
-    // This dictoanary will store the weights it will give to other events, the more event weight an event has the more likely it is to happen
+    // This dictoanary will store the weights it will give to other events/choice, the more event weight an event/choice has the more likely it is to happen
     [SerializeField] public List<WeightToGive> weightToGive;
 
     // This dictionary will store the stock changes that will happen when this event happens
@@ -85,9 +92,10 @@ public class EventManager : MonoBehaviour
     public GameObject choicePanel;
 
     public List<Event> events;
+    public List<Choice> choices;
 
     public List<Event> eventsThatHappened = new List<Event>();
-    public List<Event> choicesMade = new List<Event>();
+    public List<Choice> choicesMade = new List<Choice>();
     public List<Traits> traits = new List<Traits>();
 
     private void Start()
@@ -95,6 +103,7 @@ public class EventManager : MonoBehaviour
         EventData eventData = new EventData();
         eventData.FIllList();
         events = eventData.events;
+        choices = eventData.choices;
     }
 
 
@@ -145,30 +154,31 @@ public class EventManager : MonoBehaviour
         choiceTimeElapsed = choiceTime;
         choicePanel.SetActive(true);
 
-        List<Event> choices = new List<Event>();
-        events.Sort((a, b) => b.weight.CompareTo(a.weight));
+        List<Choice> newChoicesList = new List<Choice>();
+        choices.Sort((a, b) => b.weight.CompareTo(a.weight));
 
-        foreach (Event e in events)
+        foreach (Choice c in choices)
         {
-            if (e.eventType == 1 && e.weight > 0)
+            if (c.weight > 0)
             {
-                choices.Add(e);
+                newChoicesList.Add(c);
+                Debug.Log(c.name);
             }
 
-            if (choices.Count >= 5)
+            if (newChoicesList.Count >= 5)
             {
                 break;
             }
         }
 
-        // Choose 3 random events from the list
-        List<Event> randomChoices = new List<Event>();
-        for (int i = 0; i < 3; i++)
-        {
-            randomChoices.Add(choices[UnityEngine.Random.Range(0, choices.Count)]);
-        }
 
-        foreach (Event e in randomChoices)
+        // Choose a random Choice from newChoicesList
+        int randomIndex = UnityEngine.Random.Range(0, newChoicesList.Count);
+        Choice chosenChoice = newChoicesList[randomIndex];
+        choicesMade.Add(chosenChoice);
+        choices.Remove(chosenChoice);
+
+        foreach (Event e in chosenChoice.events)
         {
             // Add choicebutton to the choice panel
             GameObject choiceButtonInstance = Instantiate(choiceButton, choiceButtonParent);
@@ -177,12 +187,11 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public void MakeChoice(Event choice)
+    public void MakeChoice(Event e)
     {
-        ProcessEvent(choice);
-        eventsThatHappened.Add(choice);
-        choicesMade.Add(choice);
-        events.Remove(choice);
+        ProcessEvent(e);
+        eventsThatHappened.Add(e);
+        events.Remove(e);
         CloseChoicePanel();
     }
 
@@ -208,9 +217,14 @@ public class EventManager : MonoBehaviour
 
             foreach (Event e in events)
             {
-                if (e.eventType == 0 && e.weight > 0)
+                if (e.weight > 0)
                 {
                     worldEvents.Add(e);
+                }
+
+                if (worldEvents.Count >= 5)
+                {
+                    break;
                 }
             }
 
@@ -218,12 +232,8 @@ public class EventManager : MonoBehaviour
             //int randomIndex = UnityEngine.Random.Range(0, events.Count);
             //Event chosenEvent = events[randomIndex];
 
-            Event chosenEvent = worldEvents[UnityEngine.Random.Range(0, 10)];
+            Event chosenEvent = worldEvents[UnityEngine.Random.Range(0, 5)];
             ProcessEvent(chosenEvent);
-
-            // Add the chosen event to the list of events that happened
-            eventsThatHappened.Add(chosenEvent);
-            events.Remove(chosenEvent);
 
             GameObject eventHappendLog = Instantiate(eventHappendPrefab, eventHappendPrefabParent);
             eventHappendLog.GetComponentInChildren<TMP_Text>().text = chosenEvent.name;
@@ -267,6 +277,11 @@ public class EventManager : MonoBehaviour
         // Update the Trait values based on the chosen event
         foreach (Traits trait in chosenEvent.traitsToChange)
         {
+            if (trait.name == "Add money")
+            {
+                Debug.Log("Add money: " + trait.value);
+            }
+
             foreach (Traits t in traits)
             {
                 if (t.name == trait.name)
@@ -275,6 +290,10 @@ public class EventManager : MonoBehaviour
                 }
             }
         }
+
+        // Add the chosen event to the list of events that happened
+        eventsThatHappened.Add(chosenEvent);
+        events.Remove(chosenEvent);
     }
 
     public float GetElapsedTime()
