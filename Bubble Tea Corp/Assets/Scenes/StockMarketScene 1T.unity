@@ -335,6 +335,7 @@ MonoBehaviour:
   choiceButtonParent: {fileID: 269258239}
   choicePanel: {fileID: 1279100626}
   events: []
+  choices: []
   eventsThatHappened: []
   choicesMade: []
   traits:
