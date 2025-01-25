@@ -98,7 +98,7 @@ public class StockMarket : MonoBehaviour
     {
         foreach (var stock in Stocks)
         {
-            stock.ChangeRate *= stock.ChangeRateDelta;
+            stock.ChangeRate += stock.ChangeRateDelta;
             stock.CurrentPrice += stock.ChangeRate + UnityEngine.Random.Range(-1,1 );
             stock.CurrentPrice = Mathf.Clamp(stock.CurrentPrice, 0.1f,1000000000000.0f); // Prevent negative prices
 

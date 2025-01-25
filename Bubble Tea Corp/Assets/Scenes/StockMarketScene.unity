@@ -333,115 +333,129 @@ MonoBehaviour:
   choiceButtonParent: {fileID: 269258239}
   choicePanel: {fileID: 1279100626}
   events:
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: Wonderdrug
     weight: 1
     StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
+    - name: Health
+      valueMod: 0
+      value: 20
       changeRateMod: 3
       changeRate: 0
       DeltaMod: 0
-      changeRateDelta: 100
+      changeRateDelta: 0.5
+    - name: BubbleTea
+      valueMod: 3
+      value: 20
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: 1
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: FDA has declared that boba tea is a wonder drug. No need for any
+      other medications! (+Health)
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: DMTChurch
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Health
       valueMod: 3
       value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
+      changeRateMod: 0
+      changeRate: 10
+      DeltaMod: 3
       changeRateDelta: 100
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: DMT banned in New England church. been deemd "doping" for religious
+      experiences (+Health)
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: GrandmaFent
     weight: 1
     StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
+    - name: Health
+      valueMod: 0
+      value: -100
       changeRateMod: 3
       changeRate: 0
-      DeltaMod: 0
+      DeltaMod: 3
       changeRateDelta: 100
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Local Grandma's secret cooking ingredient turns out to be fentanyl.
+      (-Health)
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: FaceEatingLeapards
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Health
       valueMod: 3
       value: 0
-      changeRateMod: 3
-      changeRate: 0
+      changeRateMod: 0
+      changeRate: 20
       DeltaMod: 0
-      changeRateDelta: 100
+      changeRateDelta: 1.1
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Face-eating leapards now developing taste for legs, shoulders, and
+      biceps. (+Health)
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: StabPosting
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Health
       valueMod: 3
       value: 0
-      changeRateMod: 3
-      changeRate: 0
+      changeRateMod: 0
+      changeRate: -20
       DeltaMod: 0
-      changeRateDelta: 100
+      changeRateDelta: 1.5
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Reddit users post their "being stabbed" trip reports online (-Health)
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: StabDevalue
     weight: 1
     StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
+    - name: Health
+      valueMod: 0
+      value: 100
       changeRateMod: 3
       changeRate: 0
-      DeltaMod: 0
+      DeltaMod: 3
       changeRateDelta: 100
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Local stabbing victim declares "voluntary stabees" are "devaluing
+      my pain" (+Health)
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: CancerCure
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Health
       valueMod: 3
       value: 0
       changeRateMod: 3
       changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
+      DeltaMod: 1
+      changeRateDelta: -10
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: A cure for cancer has been found and is being distributed freely.
+      massive cost-savings for consumers. Healthcare companies are less pleased.
+      (Healthcare crash)
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
