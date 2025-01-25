@@ -9,25 +9,22 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Choice
 {
-    public string name;
+    public string ChoiceIdentifier;
     public Image image;
     public float weight;
     public List<Event> events;
+    public string flavourText;
 }
 
 [System.Serializable]
 public class Event
 {
-    public string name;
+    public string EventIdentifier;
     public float weight;
-
-    // This dictoanary will store the weights it will give to other events/choice, the more event weight an event/choice has the more likely it is to happen
-    [SerializeField] public List<WeightToGive> weightToGive;
-
-    // This dictionary will store the stock changes that will happen when this event happens
-    public List<StockChange> stockToChange;
-
+    public List<StockChange> StockModification;
     public List<Traits> traitsToChange;
+    public List<WeightToGive> OtherEventWeightModifiers;
+    public string FlavourText;
 
     // Will be used for the news when this event happens.
     public NewsEvent newsEvent;
@@ -102,12 +99,12 @@ public class EventManager : MonoBehaviour
 
     private void Start()
     {
-        EventData eventData = new EventData();
-        eventData.FIllList();
-        events = eventData.events;
-        choices = eventData.choices;
+        
+        //EventData eventData = new EventData();
+        //eventData.FIllList();
+        //events = eventData.events;
+        //choices = eventData.choices;
     }
-
 
     void Update()
     {
@@ -164,7 +161,7 @@ public class EventManager : MonoBehaviour
             if (c.weight > 0)
             {
                 newChoicesList.Add(c);
-                Debug.Log(c.name);
+                Debug.Log(c.ChoiceIdentifier);
             }
 
             if (newChoicesList.Count >= 5)
@@ -184,7 +181,7 @@ public class EventManager : MonoBehaviour
         {
             // Add choicebutton to the choice panel
             GameObject choiceButtonInstance = Instantiate(choiceButton, choiceButtonParent);
-            choiceButtonInstance.GetComponentInChildren<TMP_Text>().text = e.name;
+            choiceButtonInstance.GetComponentInChildren<TMP_Text>().text = e.EventIdentifier;
             choiceButtonInstance.GetComponent<Button>().onClick.AddListener(() => MakeChoice(e));
         }
     }
@@ -241,7 +238,7 @@ public class EventManager : MonoBehaviour
             ProcessEvent(chosenEvent);
 
             GameObject eventHappendLog = Instantiate(eventHappendPrefab, eventHappendPrefabParent);
-            eventHappendLog.GetComponentInChildren<TMP_Text>().text = chosenEvent.name;
+            eventHappendLog.GetComponentInChildren<TMP_Text>().text = chosenEvent.EventIdentifier;
             if (eventHappendPrefabParent.childCount > 10)
             {
                 Destroy(eventHappendPrefabParent.GetChild(0).gameObject);
@@ -256,7 +253,7 @@ public class EventManager : MonoBehaviour
     public void ProcessEvent(Event chosenEvent)
     {
         // Update the Stock values based on the chosen event
-        foreach (StockChange stock in chosenEvent.stockToChange)
+        foreach (StockChange stock in chosenEvent.StockModification)
         {
             // Get all the stocks that are in the game
             // Update the values of the stocks that the event will invluence
@@ -266,11 +263,11 @@ public class EventManager : MonoBehaviour
         }
 
         // Update the events weights based on the chosen event
-        foreach (WeightToGive weightToGive in chosenEvent.weightToGive)
+        foreach (WeightToGive weightToGive in chosenEvent.OtherEventWeightModifiers)
         {
             foreach (Event e in events)
             {
-                if (e.name == weightToGive.name)
+                if (e.EventIdentifier == weightToGive.name)
                 {
                     e.weight += weightToGive.weight;
                     //Debug.Log("Event name: " + weightToGive.name);
