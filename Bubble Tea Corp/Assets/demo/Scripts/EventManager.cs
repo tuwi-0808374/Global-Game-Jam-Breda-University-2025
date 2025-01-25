@@ -90,6 +90,8 @@ public class EventManager : MonoBehaviour
     public GameObject choiceButton;
     public Transform choiceButtonParent;
     public GameObject choicePanel;
+    public GameObject mainPanel;
+
 
     public List<Event> events;
     public List<Choice> choices;
@@ -192,7 +194,10 @@ public class EventManager : MonoBehaviour
         ProcessEvent(e);
         eventsThatHappened.Add(e);
         events.Remove(e);
+        mainPanel.SetActive(false);
         CloseChoicePanel();
+        
+
     }
 
     public void CloseChoicePanel()
