@@ -4,20 +4,24 @@ using UnityEngine;
 public class EventData
 {
     public List<Event> events;
+    public List<Choice> choices;
 
-
-    // !!! EventType 0 is a world event, EventType 1 is a choice event !!!
     // Weight with 0 will never happen
 
     public void FIllList()
     {
+        choices = new List<Choice>();
         events = new List<Event>();
 
-        Event worldEventPepsiStockIncrease = new Event
+
+        ////////////////////////////////////////////
+        ///WORLD EVENTS//////////////////////////////////
+        ////////////////////////////////////////////
+
+        Event worldEventCryptoStockIncrease = new Event
         {
             name = "Crypto Stock Increase",
             weight = 1.0f,
-            eventType = 0,
             weightToGive = new List<WeightToGive>(),
             stockToChange = new List<StockChange>
             {
@@ -27,14 +31,13 @@ public class EventData
             newsEvent = new NewsEvent { newsTitle = "Crypto Stock Increase", newsText = "Crypto stock increased by 1.0" }
         };
 
-        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
 
 
         Event worldEventNewVirus = new Event
         {
             name = "New Virus",
             weight = 1.0f,
-            eventType = 0,
             weightToGive = new List<WeightToGive>
             {
                 new WeightToGive { name = "Pandemic", weight = 10.0f } 
@@ -50,7 +53,6 @@ public class EventData
         {
             name = "Pandemic",
             weight = 0f,
-            eventType = 0,
             weightToGive = new List<WeightToGive>(),
             stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
@@ -59,63 +61,10 @@ public class EventData
 
         events.Add(worldEventPandemic);
 
-
-        Event choiceEventSugar = new Event
-        {
-            name = "Add Sugar to Tea",
-            weight = 1.0f,
-            eventType = 1,
-            weightToGive = new List<WeightToGive>(),
-            stockToChange = new List<StockChange>(),
-            traitsToChange = new List<Traits>
-            {
-                new Traits { name = "Health", value = -1 }
-            },
-            newsEvent = new NewsEvent { newsTitle = "Sugar Added", newsText = "You added sugar to your tea." }
-        };
-
-        events.Add(choiceEventSugar);
-
-        Event choiceEventFireEmployees50 = new Event
-        {
-            name = "Fire 50% of your workforce",
-            weight = 1f,
-            eventType = 1,
-            weightToGive = new List<WeightToGive>()
-            {
-                new WeightToGive { name = "Employee Strike", weight = 10 },
-            },
-            stockToChange = new List<StockChange>(),
-            traitsToChange = new List<Traits>(),
-            newsEvent = new NewsEvent { newsTitle = "choiceEventFireEmployees", newsText = "choiceEventFireEmployees" }
-        };
-
-        events.Add(choiceEventFireEmployees50);
-
-        Event choiceEventFireEmployees20 = new Event
-        {
-            name = "Fire 20% of your workforce",
-            weight = 1f,
-            eventType = 1,
-            weightToGive = new List<WeightToGive>()
-            {
-                new WeightToGive { name = "Employee Strike", weight = 5 },
-            },
-            stockToChange = new List<StockChange>(),
-            traitsToChange = new List<Traits>
-            {
-                new Traits { name = "Add money", value = 1000 },
-            },
-            newsEvent = new NewsEvent { newsTitle = "choiceEventFireEmployees", newsText = "choiceEventFireEmployees" }
-        };
-
-        events.Add(choiceEventFireEmployees20);
-
         Event worldEventWorldWar = new Event
         {
             name = "World War",
             weight = 0f,
-            eventType = 0,
             weightToGive = new List<WeightToGive>
             {
                 new WeightToGive { name = "Weapon Factory", weight = 99.0f },
@@ -129,15 +78,14 @@ public class EventData
         events.Add(worldEventWorldWar);
 
 
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
 
         Event worldEventWeaponFactory = new Event
         {
             name = "Weapon Factory",
             weight = 0f,
-            eventType = 0,
             weightToGive = new List<WeightToGive>(),
             stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
@@ -151,7 +99,6 @@ public class EventData
         {
             name = "Employee Strike",
             weight = 0f,
-            eventType = 0,
             weightToGive = new List<WeightToGive>(),
             stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
@@ -160,91 +107,182 @@ public class EventData
 
         events.Add(woldEventEmpolyeeStrike);
 
+        ////////////////////////////////////////////
+        ///CHOICES//////////////////////////////////
+        ////////////////////////////////////////////
 
-
-
-
-        Event choiceEventDummy = new Event
+        Event choiceEventFireEmployees50 = new Event
         {
-            name = "dummy",
-            weight = .1f,
-            eventType = 1,
+            name = "Fire 50% of your workforce",
+            weight = 1f,
+            weightToGive = new List<WeightToGive>()
+            {
+                new WeightToGive { name = "Employee Strike", weight = 10 },
+            },
+            stockToChange = new List<StockChange>(),
+            traitsToChange = new List<Traits>
+            {
+                new Traits { name = "Add money", value = 5000 },
+            },
+            newsEvent = new NewsEvent { newsTitle = "choiceEventFireEmployees", newsText = "choiceEventFireEmployees" }
+        };
+
+        Event choiceEventFireEmployees20 = new Event
+        {
+            name = "Fire 20% of your workforce",
+            weight = 1f,
+            weightToGive = new List<WeightToGive>()
+            {
+                new WeightToGive { name = "Employee Strike", weight = 5 },
+            },
+            stockToChange = new List<StockChange>(),
+            traitsToChange = new List<Traits>
+            {
+                new Traits { name = "Add money", value = 2000 },
+            },
+            newsEvent = new NewsEvent { newsTitle = "choiceEventFireEmployees", newsText = "choiceEventFireEmployees" }
+        };
+
+        Event choiceEventFireEmployees60 = new Event
+        {
+            name = "Fire 60% of your workforce",
+            weight = 1f,
+            weightToGive = new List<WeightToGive>()
+            {
+                new WeightToGive { name = "Employee Strike", weight = 11 },
+            },
+            stockToChange = new List<StockChange>(),
+            traitsToChange = new List<Traits>
+            {
+                new Traits { name = "Add money", value = 6000 },
+            },
+            newsEvent = new NewsEvent { newsTitle = "choiceEventFireEmployees60", newsText = "choiceEventFireEmployees60" }
+        };
+
+
+        Choice newChoiceLayOffWorkers = new Choice
+        {
+            name = "Do you want to Lay off workers?",
+            weight = 1.0f,
+            events = new List<Event>
+            {
+                choiceEventFireEmployees50,
+                choiceEventFireEmployees20,
+                choiceEventFireEmployees60
+            }
+        };
+
+        choices.Add(newChoiceLayOffWorkers);
+
+
+        ////////////////////////////////////////////
+
+        Event choiceEventInheritAccept = new Event
+        {
+            name = "Accept inheritance",
+            weight = 1f,
+            weightToGive = new List<WeightToGive>(),
+            stockToChange = new List<StockChange>(),
+            traitsToChange = new List<Traits>
+            {
+                new Traits { name = "Add money", value = 10000 },
+            },
+            newsEvent = new NewsEvent(),
+        };
+
+        Event choiceEventInheritDecline = new Event
+        {
+            name = "DECLINE inheritance",
+            weight = 1f,
             weightToGive = new List<WeightToGive>(),
             stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
-            newsEvent = new NewsEvent { newsTitle = "dummy", newsText = "dummy" }
+            newsEvent = new NewsEvent(),
         };
 
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
-        events.Add(choiceEventDummy);
+
+        Choice newChoiceYourInherit = new Choice
+        {
+            name = "Your gradma is missing, you inherit money",
+            weight = 1.0f,
+            events = new List<Event>
+            {
+                choiceEventInheritAccept,
+                choiceEventInheritDecline
+            }
+        };
+
+        choices.Add(newChoiceYourInherit);
+        choices.Add(newChoiceYourInherit);
+        choices.Add(newChoiceYourInherit);
+        choices.Add(newChoiceYourInherit);
+        choices.Add(newChoiceYourInherit);
+        choices.Add(newChoiceYourInherit);
+        choices.Add(newChoiceLayOffWorkers);
+        choices.Add(newChoiceLayOffWorkers);
+        choices.Add(newChoiceLayOffWorkers);
+        choices.Add(newChoiceLayOffWorkers);
+        choices.Add(newChoiceLayOffWorkers);
 
 
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
+        ////////////////////////////////////////////
+        ///FILLING THE REST//////////////////////////////////
+        ////////////////////////////////////////////
+
+
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
+        events.Add(worldEventCryptoStockIncrease);
     }
 }
