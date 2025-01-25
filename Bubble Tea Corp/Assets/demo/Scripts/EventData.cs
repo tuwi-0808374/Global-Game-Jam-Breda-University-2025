@@ -15,16 +15,16 @@ public class EventData
 
         Event worldEventPepsiStockIncrease = new Event
         {
-            name = "Pepsi Stock Increase",
+            name = "Crypto Stock Increase",
             weight = 1.0f,
             eventType = 0,
             weightToGive = new List<WeightToGive>(),
-            stockToChange = new List<Event>
+            stockToChange = new List<StockChange>
             {
-                new Event { name = "Pepsi", weight = 1.0f }
+                new StockChange { name = "Crypto", valueMod = StockMarket.StockMods.Multiply, value = 10.0f, changeRateMod = StockMarket.StockMods.Add, changeRate = 1.0f, DeltaMod = StockMarket.StockMods.Ignore, changeRateDelta = 1.0f},
             },
             traitsToChange = new List<Traits>(),
-            newsEvent = new NewsEvent { newsTitle = "Pepsi Stock Increase", newsText = "Pepsi stock increased by 1.0" }
+            newsEvent = new NewsEvent { newsTitle = "Crypto Stock Increase", newsText = "Crypto stock increased by 1.0" }
         };
 
         events.Add(worldEventPepsiStockIncrease);
@@ -39,7 +39,7 @@ public class EventData
             {
                 new WeightToGive { name = "Pandemic", weight = 10.0f } 
             },
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
             newsEvent = new NewsEvent { newsTitle = "New virus!", newsText = "A new strane of virus discorverd in a Dutch Foodmarker!" }
         };
@@ -52,7 +52,7 @@ public class EventData
             weight = 0f,
             eventType = 0,
             weightToGive = new List<WeightToGive>(),
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
             newsEvent = new NewsEvent { newsTitle = "World Wide Pandemic", newsText = "The whole world is on lock!!!" }
         };
@@ -66,7 +66,7 @@ public class EventData
             weight = 1.0f,
             eventType = 1,
             weightToGive = new List<WeightToGive>(),
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>
             {
                 new Traits { name = "Health", value = -1 }
@@ -85,7 +85,7 @@ public class EventData
             {
                 new WeightToGive { name = "Employee Strike", weight = 10 },
             },
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
             newsEvent = new NewsEvent { newsTitle = "choiceEventFireEmployees", newsText = "choiceEventFireEmployees" }
         };
@@ -101,7 +101,7 @@ public class EventData
             {
                 new WeightToGive { name = "Employee Strike", weight = 5 },
             },
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>
             {
                 new Traits { name = "Add money", value = 1000 },
@@ -121,7 +121,7 @@ public class EventData
                 new WeightToGive { name = "Weapon Factory", weight = 99.0f },
                 new WeightToGive { name = "World Peace", weight = -10f }
             },
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
             newsEvent = new NewsEvent { newsTitle = "World War", newsText = "CNN a world war happend!" }
         };
@@ -139,7 +139,7 @@ public class EventData
             weight = 0f,
             eventType = 0,
             weightToGive = new List<WeightToGive>(),
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
             newsEvent = new NewsEvent { newsTitle = "Weapons mass", newsText = "Poeple are buying weapons at a mass!" }
         };
@@ -153,7 +153,7 @@ public class EventData
             weight = 0f,
             eventType = 0,
             weightToGive = new List<WeightToGive>(),
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
             newsEvent = new NewsEvent { newsTitle = "Emplyee Strike", newsText = "The workers are angry!" }
         };
@@ -170,7 +170,7 @@ public class EventData
             weight = .1f,
             eventType = 1,
             weightToGive = new List<WeightToGive>(),
-            stockToChange = new List<Event>(),
+            stockToChange = new List<StockChange>(),
             traitsToChange = new List<Traits>(),
             newsEvent = new NewsEvent { newsTitle = "dummy", newsText = "dummy" }
         };

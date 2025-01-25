@@ -18,7 +18,7 @@ public class Event
     [SerializeField] public List<WeightToGive> weightToGive;
 
     // This dictionary will store the stock changes that will happen when this event happens
-    public List<Event> stockToChange;
+    public List<StockChange> stockToChange;
 
     public List<Traits> traitsToChange;
 
@@ -31,6 +31,17 @@ public class WeightToGive
 {
     public string name;
     public float weight;    
+}
+[System.Serializable]
+public class StockChange
+{
+    public string name;
+    public StockMarket.StockMods valueMod;
+    public float value;
+    public StockMarket.StockMods changeRateMod;
+    public float changeRate;
+    public StockMarket.StockMods DeltaMod;
+    public float changeRateDelta;
 }
 
 [System.Serializable]
@@ -56,6 +67,8 @@ public class NewsEvent
 [System.Serializable]
 public class EventManager : MonoBehaviour
 {
+    public StockMarket stockMarket;
+
     private float elapsedTime;
     private float interval = 1.0f;
     private float elapsedTimeChoice;
@@ -228,10 +241,11 @@ public class EventManager : MonoBehaviour
     public void ProcessEvent(Event chosenEvent)
     {
         // Update the Stock values based on the chosen event
-        foreach (Event stock in chosenEvent.stockToChange)
+        foreach (StockChange stock in chosenEvent.stockToChange)
         {
             // Get all the stocks that are in the game
             // Update the values of the stocks that the event will invluence
+            stockMarket.UpdateStock(stock.name, stock.valueMod, stock.value, stock.changeRateMod, stock.changeRate, stock.DeltaMod, stock.changeRateDelta);
 
         }
 
