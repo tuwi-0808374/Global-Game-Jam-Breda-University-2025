@@ -279,7 +279,8 @@ public class EventManager : MonoBehaviour
         {
             if (trait.name == "Add money")
             {
-                Debug.Log("Add money: " + trait.value);
+                //Debug.Log("Add money: " + trait.value);
+                stockMarket.PlayerMoney += trait.value;
             }
 
             foreach (Traits t in traits)
