@@ -79,7 +79,7 @@ public class EventData
         Event choiceEventFireEmployees50 = new Event
         {
             name = "Fire 50% of your workforce",
-            weight = 0f,
+            weight = 1f,
             eventType = 1,
             weightToGive = new List<WeightToGive>()
             {
@@ -95,7 +95,7 @@ public class EventData
         Event choiceEventFireEmployees20 = new Event
         {
             name = "Fire 20% of your workforce",
-            weight = 0f,
+            weight = 1f,
             eventType = 1,
             weightToGive = new List<WeightToGive>()
             {
@@ -161,6 +161,88 @@ public class EventData
         events.Add(woldEventEmpolyeeStrike);
 
 
+
+
+
+        Event choiceEventDummy = new Event
+        {
+            name = "dummy",
+            weight = .1f,
+            eventType = 1,
+            weightToGive = new List<WeightToGive>(),
+            stockToChange = new List<Event>(),
+            traitsToChange = new List<Traits>(),
+            newsEvent = new NewsEvent { newsTitle = "dummy", newsText = "dummy" }
+        };
+
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+        events.Add(choiceEventDummy);
+
+
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
+        events.Add(worldEventPepsiStockIncrease);
         events.Add(worldEventPepsiStockIncrease);
         events.Add(worldEventPepsiStockIncrease);
         events.Add(worldEventPepsiStockIncrease);

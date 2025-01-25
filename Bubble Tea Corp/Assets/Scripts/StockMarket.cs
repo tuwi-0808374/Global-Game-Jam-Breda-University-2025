@@ -1,7 +1,12 @@
+using System;
 using System.Collections.Generic;
+using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.VirtualTexturing;
 using UnityEngine.UI;
+using static StockMarket;
 
 public class StockMarket : MonoBehaviour
 {
@@ -34,6 +39,7 @@ public class StockMarket : MonoBehaviour
         Multiply,
         Ignore
     }
+    public List<List<float>> StockHistory = new List<List<float>> ();
 
     public GameObject StockItemPrefab; // Prefab for a stock item in the UI
     public Transform StockListContainer; // Parent container for stock items
@@ -56,6 +62,13 @@ public class StockMarket : MonoBehaviour
 
         // Start updating stock prices
         InvokeRepeating("UpdateStockPrices", 2.0f, 5.0f);
+
+        //Initialize stock history
+        for (int i = 0; i < Stocks.Count; i++)
+        {
+            StockHistory.Add(new List<float>());
+            StockHistory[i].Add(Stocks[i].CurrentPrice);
+        }
     }
 
     void PopulateStockList()
@@ -84,8 +97,16 @@ public class StockMarket : MonoBehaviour
         foreach (var stock in Stocks)
         {
             stock.ChangeRate *= stock.ChangeRateDelta;
-            stock.CurrentPrice *= 1 + Random.Range(-stock.ChangeRate, stock.ChangeRate);
+            stock.CurrentPrice *= 1 + UnityEngine.Random.Range(-stock.ChangeRate, stock.ChangeRate);
             stock.CurrentPrice = Mathf.Max(stock.CurrentPrice, 0.1f); // Prevent negative prices
+
+            //Figure out which stock we are updating
+            int TargetStockIndex = Stocks.FindIndex(x => x.Name == stock.Name);
+            List<float> SpecStockHist = StockHistory[TargetStockIndex];
+            
+            //Add the new value to the stock history
+            SpecStockHist.Add(stock.CurrentPrice);
+            StockHistory[TargetStockIndex] = SpecStockHist;
         }
 
         UpdateUI();
