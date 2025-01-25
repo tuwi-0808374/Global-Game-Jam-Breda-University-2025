@@ -12,6 +12,7 @@ public class StockMarket : MonoBehaviour
         public string Description;
         public float CurrentPrice;
         public float ChangeRate;
+        public float ChangeRateDelta;
         public int PlayerShares;
 
         public Stock(string name, float price, float changeRate)
@@ -19,12 +20,20 @@ public class StockMarket : MonoBehaviour
             Name = name;
             CurrentPrice = price;
             ChangeRate = changeRate;
+            ChangeRateDelta = 1f;
             PlayerShares = 0;
         }
     }
 
     public List<Stock> Stocks = new List<Stock>();
     public float PlayerMoney = 100.0f;
+    public enum StockMods
+    {
+        Add,
+        Overwrite,
+        Multiply,
+        Ignore
+    }
 
     public GameObject StockItemPrefab; // Prefab for a stock item in the UI
     public Transform StockListContainer; // Parent container for stock items
@@ -74,6 +83,7 @@ public class StockMarket : MonoBehaviour
     {
         foreach (var stock in Stocks)
         {
+            stock.ChangeRate *= stock.ChangeRateDelta;
             stock.CurrentPrice *= 1 + Random.Range(-stock.ChangeRate, stock.ChangeRate);
             stock.CurrentPrice = Mathf.Max(stock.CurrentPrice, 0.1f); // Prevent negative prices
         }
@@ -151,5 +161,86 @@ public class StockMarket : MonoBehaviour
             netWorthStocks += stock.PlayerShares * stock.CurrentPrice;
         }
         return netWorthStocks;
+    }
+    public void UpdateStock(string StockName, StockMods ValueMod, float Value, StockMods ChangeRateMod, float ChangeRate, StockMods DeltaMod, float ChangeRateDelta)
+    {
+        // Find the stock you want to update
+        int TargetStockIndex = Stocks.FindIndex(x => x.Name == StockName);
+        Stock TargetStock = Stocks[TargetStockIndex];
+
+        // Update the value of the stock
+        switch (ValueMod)
+        {
+            case StockMods.Add:
+                {
+                    TargetStock.CurrentPrice += Value;
+                    break;
+                }
+            case StockMods.Overwrite:
+                {
+                    TargetStock.CurrentPrice = Value;
+                    break;
+                }
+            case StockMods.Multiply:
+                {
+                    TargetStock.CurrentPrice *= Value;
+                    break;
+                }
+            case StockMods.Ignore:
+                {
+                    break;
+                }
+        }
+
+        // Update the changerate of the stock
+        switch (ChangeRateMod)
+        {
+            case StockMods.Add:
+                {
+                    TargetStock.ChangeRate += ChangeRate;
+                    break;
+                }
+            case StockMods.Overwrite:
+                {
+                    TargetStock.ChangeRate = ChangeRate;
+                    break;
+                }
+            case StockMods.Multiply:
+                {
+                    TargetStock.ChangeRate *= ChangeRate;
+                    break;
+                }
+            case StockMods.Ignore:
+                {
+                    break;
+                }
+        }
+
+        // update the change rate delta of the stock
+        switch (DeltaMod)
+        {
+            case StockMods.Add:
+                {
+                    TargetStock.ChangeRateDelta += ChangeRateDelta;
+                    break;
+                }
+            case StockMods.Overwrite:
+                {
+                    TargetStock.ChangeRateDelta = ChangeRateDelta;
+                    break;
+                }
+            case StockMods.Multiply:
+                {
+                    TargetStock.ChangeRateDelta *= ChangeRateDelta;
+                    break;
+                }
+            case StockMods.Ignore:
+                {
+                    break;
+                }
+        }
+
+        //Update the stock list with the new modified stock
+        Stocks[TargetStockIndex] = TargetStock;
     }
 }
