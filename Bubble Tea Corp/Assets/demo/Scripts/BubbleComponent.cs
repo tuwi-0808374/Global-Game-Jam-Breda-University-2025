@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class BubbleComponent : MonoBehaviour
 {
@@ -15,7 +16,10 @@ public class BubbleComponent : MonoBehaviour
     {
         upwardsspeed = upwardsspeed + Random.Range(-3,7);
         rt.anchoredPosition = new Vector3(Random.Range(-startbounds,startbounds),-417,0);
+
+        StartCoroutine(LifeSpan());
     }
+
 
     // Update is called once per frame
     void Update()
@@ -27,7 +31,15 @@ public class BubbleComponent : MonoBehaviour
 
     public void Popped(){
         Debug.Log("Pop!");
+        
+
+    }
 
 
+    //lifespawn
+    IEnumerator LifeSpan()
+    {  
+        yield return new WaitForSeconds(70);
+        Destroy(gameObject);
     }
 }
