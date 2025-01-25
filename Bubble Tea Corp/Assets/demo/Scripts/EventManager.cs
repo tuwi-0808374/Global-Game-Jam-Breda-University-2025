@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.MPE;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -59,6 +60,7 @@ public class EventManager : MonoBehaviour
     private float interval = 1.0f;
     private float elapsedTimeChoice;
     private float intervalChoice = 5.0f;
+    public bool pauseWorldEvents = false;
 
     public float choiceTime = 10.0f;
     public float choiceTimeElapsed;
@@ -67,6 +69,7 @@ public class EventManager : MonoBehaviour
     public Transform eventHappendPrefabParent;
     public GameObject choiceButton;
     public Transform choiceButtonParent;
+    public GameObject choicePanel;
 
     public List<Event> events;
 
@@ -84,53 +87,106 @@ public class EventManager : MonoBehaviour
 
     void Update()
     {
-        // Increment elapsed time by the time passed since the last frame
-        elapsedTime += Time.deltaTime;
-        elapsedTimeChoice += Time.deltaTime;
-
-        // Check if the interval has passed
-        if (elapsedTime >= interval)
+        if (!pauseWorldEvents)
         {
-            // Reset elapsed time
-            elapsedTime = 0f;
+            // Increment elapsed time by the time passed since the last frame
+            elapsedTime += Time.deltaTime;
 
-            // Trigger a random event from the list
-            TriggerRandomEvent();
+            // Check if the interval has passed
+            if (elapsedTime >= interval)
+            {
+                // Reset elapsed time
+                elapsedTime = 0f;
+
+                // Trigger a random event from the list
+                TriggerWorldEvent();
+            }
+
         }
 
-        if (elapsedTimeChoice >= intervalChoice)
+        if (choiceTimeElapsed <= 0)
         {
-            elapsedTimeChoice = 0f;
+            elapsedTimeChoice += Time.deltaTime;
+            if (elapsedTimeChoice >= intervalChoice)
+            {
+                elapsedTimeChoice = 0f;
 
-            TriggerChoice();
+                TriggerChoice();
+            }
+        }
+
+        if (choiceTimeElapsed > 0)
+        {
+            choiceTimeElapsed -= Time.deltaTime;
+        }
+        else
+        {
+            CloseChoicePanel();
         }
     }
 
     private void TriggerChoice()
     {
+        pauseWorldEvents = true;
+
+        choiceTimeElapsed = choiceTime;
+        choicePanel.SetActive(true);
+
         List<Event> choices = new List<Event>();
         events.Sort((a, b) => b.weight.CompareTo(a.weight));
 
         foreach (Event e in events)
         {
-            if (e.eventType == 1)
+            if (e.eventType == 1 && e.weight > 0)
             {
                 choices.Add(e);
             }
 
-            if (choices.Count > 3)
+            if (choices.Count >= 5)
             {
                 break;
             }
         }
 
-        foreach (Event e in choices)
+        // Choose 3 random events from the list
+        List<Event> randomChoices = new List<Event>();
+        for (int i = 0; i < 3; i++)
         {
-            Debug.Log("Choice: " + e.name);
+            randomChoices.Add(choices[UnityEngine.Random.Range(0, choices.Count)]);
+        }
+
+        foreach (Event e in randomChoices)
+        {
+            // Add choicebutton to the choice panel
+            GameObject choiceButtonInstance = Instantiate(choiceButton, choiceButtonParent);
+            choiceButtonInstance.GetComponentInChildren<TMP_Text>().text = e.name;
+            choiceButtonInstance.GetComponent<Button>().onClick.AddListener(() => MakeChoice(e));
         }
     }
 
-    private void TriggerRandomEvent()
+    public void MakeChoice(Event choice)
+    {
+        ProcessEvent(choice);
+        eventsThatHappened.Add(choice);
+        choicesMade.Add(choice);
+        events.Remove(choice);
+        CloseChoicePanel();
+    }
+
+    public void CloseChoicePanel()
+    {
+        pauseWorldEvents = false;
+
+        // destroy all child in the choice panel
+        for (int i = 0; i < choiceButtonParent.childCount; i++)
+        {
+            Destroy(choiceButtonParent.GetChild(i).gameObject);
+        }
+
+        choicePanel.SetActive(false);
+    }
+
+    private void TriggerWorldEvent()
     {
         if (events.Count > 0)
         {
@@ -139,7 +195,7 @@ public class EventManager : MonoBehaviour
 
             foreach (Event e in events)
             {
-                if (e.eventType == 0)
+                if (e.eventType == 0 && e.weight > 0)
                 {
                     worldEvents.Add(e);
                 }
@@ -149,44 +205,10 @@ public class EventManager : MonoBehaviour
             //int randomIndex = UnityEngine.Random.Range(0, events.Count);
             //Event chosenEvent = events[randomIndex];
 
-            Event chosenEvent = worldEvents[0];
-
-            // Update the Stock values based on the chosen event
-            foreach (Event stock in chosenEvent.stockToChange)
-            {
-                // Get all the stocks that are in the game
-                // Update the values of the stocks that the event will invluence
-            }
-
-            // Update the events weights based on the chosen event
-            foreach (WeightToGive weightToGive in chosenEvent.weightToGive)
-            {
-                foreach (Event e in events)
-                {
-                    if (e.name == weightToGive.name)
-                    {
-                        e.weight += weightToGive.weight;
-                        Debug.Log("Event name: " + weightToGive.name);
-                        Debug.Log("New Event weight: " + weightToGive.weight);
-                    }
-                }
-            }
-
-            // Update the Trait values based on the chosen event
-            foreach (Traits trait in chosenEvent.traitsToChange)
-            {
-                foreach (Traits t in traits)
-                {
-                    if (t.name == trait.name)
-                    {
-                        t.SetTrait(trait.value);
-                    }
-                }
-            }
-
+            Event chosenEvent = worldEvents[UnityEngine.Random.Range(0, 10)];
+            ProcessEvent(chosenEvent);
 
             // Add the chosen event to the list of events that happened
-            
             eventsThatHappened.Add(chosenEvent);
             events.Remove(chosenEvent);
 
@@ -199,7 +221,44 @@ public class EventManager : MonoBehaviour
 
 
             // Trigger the chosen event (for now, just log it)
-            Debug.Log($"Event triggered: {chosenEvent.name}");
+            //Debug.Log($"Event triggered: {chosenEvent.name}");
+        }
+    }
+
+    public void ProcessEvent(Event chosenEvent)
+    {
+        // Update the Stock values based on the chosen event
+        foreach (Event stock in chosenEvent.stockToChange)
+        {
+            // Get all the stocks that are in the game
+            // Update the values of the stocks that the event will invluence
+
+        }
+
+        // Update the events weights based on the chosen event
+        foreach (WeightToGive weightToGive in chosenEvent.weightToGive)
+        {
+            foreach (Event e in events)
+            {
+                if (e.name == weightToGive.name)
+                {
+                    e.weight += weightToGive.weight;
+                    //Debug.Log("Event name: " + weightToGive.name);
+                    //Debug.Log("New Event weight: " + weightToGive.weight);
+                }
+            }
+        }
+
+        // Update the Trait values based on the chosen event
+        foreach (Traits trait in chosenEvent.traitsToChange)
+        {
+            foreach (Traits t in traits)
+            {
+                if (t.name == trait.name)
+                {
+                    t.SetTrait(trait.value);
+                }
+            }
         }
     }
 
