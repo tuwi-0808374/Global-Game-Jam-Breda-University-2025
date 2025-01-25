@@ -335,6 +335,7 @@ MonoBehaviour:
   choiceButtonParent: {fileID: 269258239}
   choicePanel: {fileID: 1279100626}
   events: []
+  choices: []
   eventsThatHappened: []
   choicesMade: []
   traits:
@@ -1557,7 +1558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stocks: []
   PlayerMoney: 100
-  StockItemPrefab: {fileID: 6476608953769519020, guid: d5547b77f8780914691d3464382c6be4, type: 3}
+  StockItemPrefab: {fileID: 522754337202943557, guid: d5547b77f8780914691d3464382c6be4, type: 3}
   StockListContainer: {fileID: 583010268}
   PlayerMoneyText: {fileID: 1887318052}
 --- !u!4 &1789740650

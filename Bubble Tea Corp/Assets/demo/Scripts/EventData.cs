@@ -25,7 +25,7 @@ public class EventData
             weightToGive = new List<WeightToGive>(),
             stockToChange = new List<StockChange>
             {
-                new StockChange { name = "Crypto", valueMod = StockMarket.StockMods.Ignore, value = 10.0f, changeRateMod = StockMarket.StockMods.Ignore, changeRate = 100.0f, DeltaMod = StockMarket.StockMods.Add, changeRateDelta = 100.0f},
+                new StockChange { name = "Crypto", valueMod = StockMarket.StockMods.Ignore, value = 10.0f, changeRateMod = StockMarket.StockMods.Ignore, changeRate = 1.0f, DeltaMod = StockMarket.StockMods.Add, changeRateDelta = 100.0f},
             },
             traitsToChange = new List<Traits>(),
             newsEvent = new NewsEvent { newsTitle = "Crypto Stock Increase", newsText = "Crypto stock increased by 1.0" }

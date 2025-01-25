@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
 using TMPro;
@@ -32,6 +33,7 @@ public class StockMarket : MonoBehaviour
 
     public List<Stock> Stocks = new List<Stock>();
     public float PlayerMoney = 100.0f;
+ 
     public enum StockMods
     {
         Add,
@@ -147,6 +149,38 @@ public class StockMarket : MonoBehaviour
         UpdateUI();
     }
 
+    List<int> NormalizeToRange(List<float> values, int minTarget, int maxTarget)
+    {
+        if (values == null || values.Count == 0)
+            return new List<int>();
+
+        float minValue = Mathf.Min(values.ToArray());
+        float maxValue = Mathf.Max(values.ToArray());
+
+        // Avoid division by zero if all values are the same
+        if (Mathf.Approximately(maxValue, minValue))
+        {
+            // If all values are the same, map them all to the midpoint of the target range
+            int midpoint = Mathf.RoundToInt((minTarget + maxTarget) / 2.0f);
+            return new List<int>(new int[values.Count].Select(_ => midpoint));
+        }
+
+        List<int> result = new List<int>();
+
+        foreach (float value in values)
+        {
+            // Normalize the value to the range 0 to 1
+            float normalized = (value - minValue) / (maxValue - minValue);
+
+            // Scale to the target range
+            int scaledValue = Mathf.Clamp(Mathf.RoundToInt(normalized * (maxTarget - minTarget) + minTarget), minTarget, maxTarget);
+
+            result.Add(scaledValue);
+        }
+
+        return result;
+    }
+
     void UpdateUI()
     {
         // Update player money display
@@ -170,7 +204,14 @@ public class StockMarket : MonoBehaviour
             else
                 priceText.color = Color.white;
 
-            stockItem.Find("PlayerShares").GetComponent<TextMeshProUGUI>().text = $"Shares: {stock.PlayerShares}";
+            stockItem.Find("PlayerShares").GetComponent<TextMeshProUGUI>().text = $"x{stock.PlayerShares}";
+
+            List<float> currentStockHistory = StockHistory[i];
+            //List<int> intList = currentStockHistory.Select(f => Mathf.RoundToInt(f)).ToList();
+            List<float> trimmedList = currentStockHistory.TakeLast(15).ToList();
+            List<int> normalizedList = NormalizeToRange(trimmedList, 0, 100);
+
+            stockItem.GetComponentInChildren<Window_Graph>().valueList = normalizedList;
         }
     }
 

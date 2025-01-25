@@ -22,6 +22,7 @@ public class Window_Graph : MonoBehaviour {
     [SerializeField] private Sprite circleSprite;
     private RectTransform graphContainer;
     public List<int> valueList = new List<int>() { 5, 98, 56, 45, 30, 22, 17, 15, 13, 17, 25, 37, 40, 36, 33 };
+    public Color lineColor = Color.white;
 
     private void Awake() {
         graphContainer = transform.Find("graphContainer").GetComponent<RectTransform>();
@@ -39,6 +40,7 @@ public class Window_Graph : MonoBehaviour {
         GameObject gameObject = new GameObject("circle", typeof(Image));
         gameObject.transform.SetParent(graphContainer, false);
         gameObject.GetComponent<Image>().sprite = circleSprite;
+        gameObject.GetComponent<Image>().enabled = false;
         RectTransform rectTransform = gameObject.GetComponent<RectTransform>();
         rectTransform.anchoredPosition = anchoredPosition;
         rectTransform.sizeDelta = new Vector2(11, 11);
@@ -49,8 +51,8 @@ public class Window_Graph : MonoBehaviour {
 
     private void ShowGraph(List<int> valueList) {
         float graphHeight = graphContainer.sizeDelta.y;
-        float yMaximum = 100f;
-        float xSize = 50f;
+        float yMaximum = 190f;
+        float xSize = 13f;
 
         // destroy all child in the choice panel
         for (int i = 0; i < graphContainer.childCount; i++)
@@ -73,7 +75,7 @@ public class Window_Graph : MonoBehaviour {
     private void CreateDotConnection(Vector2 dotPositionA, Vector2 dotPositionB) {
         GameObject gameObject = new GameObject("dotConnection", typeof(Image));
         gameObject.transform.SetParent(graphContainer, false);
-        gameObject.GetComponent<Image>().color = new Color(1,1,1, .5f);
+        gameObject.GetComponent<Image>().color = lineColor;
         RectTransform rectTransform = gameObject.GetComponent<RectTransform>();
         Vector2 dir = (dotPositionB - dotPositionA).normalized;
         float distance = Vector2.Distance(dotPositionA, dotPositionB);
