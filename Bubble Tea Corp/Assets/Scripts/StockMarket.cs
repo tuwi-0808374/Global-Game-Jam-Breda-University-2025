@@ -83,6 +83,7 @@ public class StockMarket : MonoBehaviour
     {
         foreach (var stock in Stocks)
         {
+            stock.ChangeRate *= stock.ChangeRateDelta;
             stock.CurrentPrice *= 1 + Random.Range(-stock.ChangeRate, stock.ChangeRate);
             stock.CurrentPrice = Mathf.Max(stock.CurrentPrice, 0.1f); // Prevent negative prices
         }
