@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class BubbleSpawners : MonoBehaviour
 {
-    public GameObject spawnObject;
-    public Vector3 spawnPoint;
-    public int timeTilNextSpawn = 5;
-    float timer = 0;
-    public Transform left;
-    public Transform right;
+    public GameObject spawnObject; // Prefab to spawn
+    public GameObject canvas; 
+    public GameObject mainPanel; 
+    public Vector3 spawnPoint; // Spawn position
+    public int timeTilNextSpawn = 5; // Time between spawns
+    private float timer = 0;
+    public Transform left; 
+    public Transform right; 
 
     void Start()
     {
@@ -17,18 +19,39 @@ public class BubbleSpawners : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
-        Spawn();
+        if (timer >= timeTilNextSpawn)
+        {
+            Spawn();
+        }
     }
 
     void Spawn()
     {
-        if (timer >= timeTilNextSpawn)
+        // Instantiate the bubble prefab
+        GameObject newBubble = Instantiate(spawnObject);
+
+
+        newBubble.transform.SetParent(canvas.transform, false);
+
+        BubbleComponent bubbleComponent = newBubble.GetComponent<BubbleComponent>();
+        if (bubbleComponent != null)
         {
-            GameObject newBubble = Instantiate(spawnObject, spawnPoint, Quaternion.identity);
-            // newBubble.upwardsspeed = newBubble.upwardsspeed + Random.Range(-3,7);
-            newBubble.GetComponent<BubbleComponent>().rt.anchoredPosition = new Vector3(Random.Range(left.position.x,right.position.x),-417,0);
-            timer = 0;
+            bubbleComponent.mainPanel = mainPanel;
         }
+
+
+        RectTransform bubbleRect = newBubble.GetComponent<RectTransform>();
+        if (bubbleRect != null)
+        {
+            RectTransform canvasRect = canvas.GetComponent<RectTransform>();
+            Vector3 leftLocal = canvasRect.InverseTransformPoint(left.position);
+            Vector3 rightLocal = canvasRect.InverseTransformPoint(right.position);
+
+            float randomX = Random.Range(leftLocal.x, rightLocal.x);
+            bubbleRect.anchoredPosition = new Vector3(randomX, -417, 0);
+        }
+
+        // Reset the spawn timer
+        timer = 0;
     }
 }
-
