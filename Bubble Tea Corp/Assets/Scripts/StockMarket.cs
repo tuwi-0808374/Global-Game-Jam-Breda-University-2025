@@ -207,7 +207,6 @@ public class StockMarket : MonoBehaviour
             stockItem.Find("PlayerShares").GetComponent<TextMeshProUGUI>().text = $"x{stock.PlayerShares}";
 
             List<float> currentStockHistory = StockHistory[i];
-            //List<int> intList = currentStockHistory.Select(f => Mathf.RoundToInt(f)).ToList();
             List<float> trimmedList = currentStockHistory.TakeLast(15).ToList();
             List<int> normalizedList = NormalizeToRange(trimmedList, 0, 100);
 
