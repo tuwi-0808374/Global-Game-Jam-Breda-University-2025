@@ -4,6 +4,7 @@ using System.Collections;
 
 public class BubbleComponent : MonoBehaviour
 {
+    public GameObject mainPanel;
     public RectTransform rt;
     private float sway = 0;
     private float swaydivide = 0.1f;
@@ -33,6 +34,8 @@ public class BubbleComponent : MonoBehaviour
     public void Popped(){
         Debug.Log("Pop!");
         
+        mainPanel.SetActive(true);
+
         Destroy(gameObject);
     }
 
