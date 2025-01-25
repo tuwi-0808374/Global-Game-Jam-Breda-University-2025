@@ -29,10 +29,11 @@ public class BubbleComponent : MonoBehaviour
         rt.position = rt.position + new Vector3(Mathf.Sin(sway)*swaydivide,upwardsspeed * Time.deltaTime,0);//new Vector3(horizontalInput * movementSpeed * Time.deltaTime, verticalInput * movementSpeed * Time.deltaTime, 0);
     }
 
+
     public void Popped(){
         Debug.Log("Pop!");
         
-
+        Destroy(gameObject);
     }
 
 
