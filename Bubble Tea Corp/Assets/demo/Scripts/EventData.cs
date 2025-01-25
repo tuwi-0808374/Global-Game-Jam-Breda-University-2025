@@ -6,8 +6,6 @@ public class EventData
     public List<Event> events;
     public List<Choice> choices;
 
-
-    // !!! EventType 0 is a world event, EventType 1 is a choice event !!!
     // Weight with 0 will never happen
 
     public void FIllList()
