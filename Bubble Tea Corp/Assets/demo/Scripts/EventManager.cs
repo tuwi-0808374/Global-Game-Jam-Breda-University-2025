@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -59,6 +60,14 @@ public class EventManager : MonoBehaviour
     private float elapsedTimeChoice;
     private float intervalChoice = 5.0f;
 
+    public float choiceTime = 10.0f;
+    public float choiceTimeElapsed;
+
+    public GameObject eventHappendPrefab;
+    public Transform eventHappendPrefabParent;
+    public GameObject choiceButton;
+    public Transform choiceButtonParent;
+
     public List<Event> events;
 
     public List<Event> eventsThatHappened = new List<Event>();
@@ -77,6 +86,7 @@ public class EventManager : MonoBehaviour
     {
         // Increment elapsed time by the time passed since the last frame
         elapsedTime += Time.deltaTime;
+        elapsedTimeChoice += Time.deltaTime;
 
         // Check if the interval has passed
         if (elapsedTime >= interval)
@@ -88,8 +98,7 @@ public class EventManager : MonoBehaviour
             TriggerRandomEvent();
         }
 
-
-        if (elapsedTimeChoice >= interval)
+        if (elapsedTimeChoice >= intervalChoice)
         {
             elapsedTimeChoice = 0f;
 
@@ -180,6 +189,13 @@ public class EventManager : MonoBehaviour
             
             eventsThatHappened.Add(chosenEvent);
             events.Remove(chosenEvent);
+
+            GameObject eventHappendLog = Instantiate(eventHappendPrefab, eventHappendPrefabParent);
+            eventHappendLog.GetComponentInChildren<TMP_Text>().text = chosenEvent.name;
+            if (eventHappendPrefabParent.childCount > 10)
+            {
+                Destroy(eventHappendPrefabParent.GetChild(0).gameObject);
+            }
 
 
             // Trigger the chosen event (for now, just log it)
