@@ -8,11 +8,12 @@ using UnityEngine.UI;
 public class Event
 {
     public string name;
+    public float weight;
 
     public int eventType;
 
     // This dictoanary will store the weights it will give to other events, the more event weight an event has the more likely it is to happen
-    [SerializeField] public List<Event> eventWeights;
+    [SerializeField] public List<WeightToGive> weightToGive;
 
     // This dictionary will store the stock changes that will happen when this event happens
     public List<Event> stockToChange;
@@ -22,6 +23,12 @@ public class Event
     // Will be used for the news when this event happens.
     public NewsEvent newsEvent;
 
+}
+[System.Serializable]
+public class WeightToGive
+{
+    public string name;
+    public float weight;    
 }
 
 [System.Serializable]
@@ -33,7 +40,7 @@ public class Traits
     public void SetTrait(float value)
     {
         this.value += value;
-        Debug.Log("trait: " + value);
+        //Debug.Log("trait: " + value);
     }
 }
 
@@ -49,9 +56,11 @@ public class EventManager : MonoBehaviour
 {
     private float elapsedTime;
     private float interval = 1.0f;
+    private float elapsedTimeChoice;
+    private float intervalChoice = 5.0f;
+
 
     public List<Event> events;
-
 
     public List<Event> eventsThatHappened = new List<Event>();
     public List<Event> choicesMade = new List<Event>();
@@ -71,19 +80,83 @@ public class EventManager : MonoBehaviour
             // Trigger a random event from the list
             TriggerRandomEvent();
         }
+
+
+        if (elapsedTimeChoice >= interval)
+        {
+            elapsedTimeChoice = 0f;
+
+            TriggerChoice();
+        }
+    }
+
+    private void TriggerChoice()
+    {
+        List<Event> choices = new List<Event>();
+        events.Sort((a, b) => b.weight.CompareTo(a.weight));
+
+        foreach (Event e in events)
+        {
+            if (e.eventType == 1)
+            {
+                choices.Add(e);
+            }
+
+            if (choices.Count > 3)
+            {
+                break;
+            }
+        }
+
+        foreach (Event e in choices)
+        {
+            Debug.Log("Choice: " + e.name);
+        }
     }
 
     private void TriggerRandomEvent()
     {
         if (events.Count > 0)
         {
+            List<Event> worldEvents = new List<Event>();
+            events.Sort((a, b) => b.weight.CompareTo(a.weight));
+
+            foreach (Event e in events)
+            {
+                if (e.eventType == 0)
+                {
+                    worldEvents.Add(e);
+                }
+            }
+
             // Choose a random event from the list
-            int randomIndex = UnityEngine.Random.Range(0, events.Count);
-            Event chosenEvent = events[randomIndex];
+            //int randomIndex = UnityEngine.Random.Range(0, events.Count);
+            //Event chosenEvent = events[randomIndex];
 
-            // Add the chosen event to the list of events that happened
-            eventsThatHappened.Add(chosenEvent);
+            Event chosenEvent = worldEvents[0];
 
+            // Update the Stock values based on the chosen event
+            foreach (Event stock in chosenEvent.stockToChange)
+            {
+                // Get all the stocks that are in the game
+                // Update the values of the stocks that the event will invluence
+            }
+
+            // Update the events weights based on the chosen event
+            foreach (WeightToGive weightToGive in chosenEvent.weightToGive)
+            {
+                foreach (Event e in events)
+                {
+                    if (e.name == weightToGive.name)
+                    {
+                        e.weight += weightToGive.weight;
+                        Debug.Log("Event name: " + weightToGive.name);
+                        Debug.Log("New Event weight: " + weightToGive.weight);
+                    }
+                }
+            }
+
+            // Update the Trait values based on the chosen event
             foreach (Traits trait in chosenEvent.traitsToChange)
             {
                 foreach (Traits t in traits)
@@ -94,6 +167,13 @@ public class EventManager : MonoBehaviour
                     }
                 }
             }
+
+
+            // Add the chosen event to the list of events that happened
+            
+            eventsThatHappened.Add(chosenEvent);
+            events.Remove(chosenEvent);
+
 
             // Trigger the chosen event (for now, just log it)
             Debug.Log($"Event triggered: {chosenEvent.name}");
