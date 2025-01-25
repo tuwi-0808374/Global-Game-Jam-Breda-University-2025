@@ -3,13 +3,14 @@ using UnityEngine;
 public class BubbleSpawners : MonoBehaviour
 {
     public GameObject spawnObject; // Prefab to spawn
-    public GameObject canvas; 
-    public GameObject mainPanel; 
+    public GameObject canvas;
+    public GameObject mainPanel;
     public Vector3 spawnPoint; // Spawn position
     public int timeTilNextSpawn = 5; // Time between spawns
     private float timer = 0;
-    public Transform left; 
-    public Transform right; 
+    public Transform left;
+    public Transform right;
+    public bool spawnBubbles = true;
 
     void Start()
     {
@@ -18,6 +19,11 @@ public class BubbleSpawners : MonoBehaviour
 
     private void Update()
     {
+        if(!spawnBubbles)
+        {
+            return;
+        }
+
         timer += Time.deltaTime;
         if (timer >= timeTilNextSpawn)
         {
@@ -34,10 +40,10 @@ public class BubbleSpawners : MonoBehaviour
         newBubble.transform.SetParent(canvas.transform, false);
 
         BubbleComponent bubbleComponent = newBubble.GetComponent<BubbleComponent>();
-        if (bubbleComponent != null)
-        {
-            bubbleComponent.mainPanel = mainPanel;
-        }
+        //if (bubbleComponent != null)
+        //{
+        //    bubbleComponent.mainPanel = mainPanel;
+        //}
 
 
         RectTransform bubbleRect = newBubble.GetComponent<RectTransform>();
@@ -54,4 +60,15 @@ public class BubbleSpawners : MonoBehaviour
         // Reset the spawn timer
         timer = 0;
     }
+
+    public void DestroyAllBubbes()
+    {
+        BubbleComponent[] bubbles = FindObjectsOfType<BubbleComponent>();
+        foreach (BubbleComponent bubble in bubbles)
+        {
+            bubble.DestroyMe();
+        }
+    }
+
+
 }

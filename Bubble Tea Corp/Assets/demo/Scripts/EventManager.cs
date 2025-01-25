@@ -75,19 +75,21 @@ public class EventManager : MonoBehaviour
 
     private float elapsedTime;
     private float interval = 1.0f;
-    private float elapsedTimeChoice;
-    private float intervalChoice = 5.0f;
+    //private float elapsedTimeChoice;
+    //private float intervalChoice = 5.0f;
     public bool pauseWorldEvents = false;
 
-    public float choiceTime = 10.0f;
-    public float choiceTimeElapsed;
+    //public float choiceTime = 10.0f;
+    //public float choiceTimeElapsed;
 
     public GameObject eventHappendPrefab;
     public Transform eventHappendPrefabParent;
+
+
     public GameObject choiceButton;
     public Transform choiceButtonParent;
     public GameObject choicePanel;
-    public GameObject mainPanel;
+    //public GameObject mainPanel;
 
 
     public List<Event> events;
@@ -125,32 +127,32 @@ public class EventManager : MonoBehaviour
 
         }
 
-        if (choiceTimeElapsed <= 0)
-        {
-            elapsedTimeChoice += Time.deltaTime;
-            if (elapsedTimeChoice >= intervalChoice)
-            {
-                elapsedTimeChoice = 0f;
+        //if (choiceTimeElapsed <= 0)
+        //{
+        //    elapsedTimeChoice += Time.deltaTime;
+        //    if (elapsedTimeChoice >= intervalChoice)
+        //    {
+        //        elapsedTimeChoice = 0f;
 
-                TriggerChoice();
-            }
-        }
+        //        TriggerChoice();
+        //    }
+        //}
 
-        if (choiceTimeElapsed > 0)
-        {
-            choiceTimeElapsed -= Time.deltaTime;
-        }
-        else
-        {
-            CloseChoicePanel();
-        }
+        //if (choiceTimeElapsed > 0)
+        //{
+        //    choiceTimeElapsed -= Time.deltaTime;
+        //}
+        //else
+        //{
+        //    CloseChoicePanel();
+        //}
     }
 
-    private void TriggerChoice()
+    public void TriggerChoice()
     {
         pauseWorldEvents = true;
 
-        choiceTimeElapsed = choiceTime;
+        //choiceTimeElapsed = choiceTime;
         choicePanel.SetActive(true);
 
         List<Choice> newChoicesList = new List<Choice>();
@@ -188,12 +190,13 @@ public class EventManager : MonoBehaviour
 
     public void MakeChoice(Event e)
     {
+        pauseWorldEvents = false;
         ProcessEvent(e);
         eventsThatHappened.Add(e);
         events.Remove(e);
-        mainPanel.SetActive(false);
+        //mainPanel.SetActive(false);
         CloseChoicePanel();
-        
+        FindObjectOfType<BubbleSpawners>().spawnBubbles = true;
 
     }
 
