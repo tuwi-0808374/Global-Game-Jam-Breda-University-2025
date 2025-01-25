@@ -59,12 +59,19 @@ public class EventManager : MonoBehaviour
     private float elapsedTimeChoice;
     private float intervalChoice = 5.0f;
 
-
     public List<Event> events;
 
     public List<Event> eventsThatHappened = new List<Event>();
     public List<Event> choicesMade = new List<Event>();
     public List<Traits> traits = new List<Traits>();
+
+    private void Start()
+    {
+        EventData eventData = new EventData();
+        eventData.FIllList();
+        events = eventData.events;
+    }
+
 
     void Update()
     {
