@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1dd6782b6b8f7b54997b4cf6df988f24
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - StockItemPrefab: {fileID: 7947226681270987048, guid: d5547b77f8780914691d3464382c6be4, type: 3}
+  - StockListContainer: {instanceID: 0}
+  - PlayerMoneyText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
