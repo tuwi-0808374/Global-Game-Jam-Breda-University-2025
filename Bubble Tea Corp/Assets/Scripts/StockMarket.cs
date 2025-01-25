@@ -67,7 +67,6 @@ public class StockMarket : MonoBehaviour
         for (int i = 0; i < Stocks.Count; i++)
         {
             StockHistory.Add(new List<float>());
-            Debug.Log(StockHistory.Count.ToString() + " " + Stocks.Count.ToString() + " " + i.ToString());
             StockHistory[i].Add(Stocks[i].CurrentPrice);
         }
     }
