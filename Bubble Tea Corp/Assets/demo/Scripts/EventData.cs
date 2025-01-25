@@ -7,6 +7,7 @@ public class EventData
 
 
     // !!! EventType 0 is a world event, EventType 1 is a choice event !!!
+    // Weight with 0 will never happen
 
     public void FIllList()
     {
@@ -27,10 +28,39 @@ public class EventData
         };
 
         events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
-        events.Add(worldEventPepsiStockIncrease);
 
-        Event choiceEvent = new Event
+
+        Event worldEventNewVirus = new Event
+        {
+            name = "New Virus",
+            weight = 1.0f,
+            eventType = 0,
+            weightToGive = new List<WeightToGive>
+            {
+                new WeightToGive { name = "Pandemic", weight = 10.0f } 
+            },
+            stockToChange = new List<Event>(),
+            traitsToChange = new List<Traits>(),
+            newsEvent = new NewsEvent { newsTitle = "New virus!", newsText = "A new strane of virus discorverd in a Dutch Foodmarker!" }
+        };
+
+        events.Add(worldEventNewVirus);
+
+        Event worldEventPandemic = new Event
+        {
+            name = "Pandemic",
+            weight = 0f,
+            eventType = 0,
+            weightToGive = new List<WeightToGive>(),
+            stockToChange = new List<Event>(),
+            traitsToChange = new List<Traits>(),
+            newsEvent = new NewsEvent { newsTitle = "World Wide Pandemic", newsText = "The whole world is on lock!!!" }
+        };
+
+        events.Add(worldEventPandemic);
+
+
+        Event choiceEventSugar = new Event
         {
             name = "Add Sugar to Tea",
             weight = 1.0f,
@@ -44,15 +74,47 @@ public class EventData
             newsEvent = new NewsEvent { newsTitle = "Sugar Added", newsText = "You added sugar to your tea." }
         };
 
-        events.Add(choiceEvent);
-        events.Add(choiceEvent);
-        events.Add(choiceEvent);
-        events.Add(choiceEvent);
+        events.Add(choiceEventSugar);
+
+        Event choiceEventFireEmployees50 = new Event
+        {
+            name = "Fire 50% of your workforce",
+            weight = 0f,
+            eventType = 1,
+            weightToGive = new List<WeightToGive>()
+            {
+                new WeightToGive { name = "Employee Strike", weight = 10 },
+            },
+            stockToChange = new List<Event>(),
+            traitsToChange = new List<Traits>(),
+            newsEvent = new NewsEvent { newsTitle = "choiceEventFireEmployees", newsText = "choiceEventFireEmployees" }
+        };
+
+        events.Add(choiceEventFireEmployees50);
+
+        Event choiceEventFireEmployees20 = new Event
+        {
+            name = "Fire 20% of your workforce",
+            weight = 0f,
+            eventType = 1,
+            weightToGive = new List<WeightToGive>()
+            {
+                new WeightToGive { name = "Employee Strike", weight = 5 },
+            },
+            stockToChange = new List<Event>(),
+            traitsToChange = new List<Traits>
+            {
+                new Traits { name = "Add money", value = 1000 },
+            },
+            newsEvent = new NewsEvent { newsTitle = "choiceEventFireEmployees", newsText = "choiceEventFireEmployees" }
+        };
+
+        events.Add(choiceEventFireEmployees20);
 
         Event worldEventWorldWar = new Event
         {
             name = "World War",
-            weight = 1.0f,
+            weight = 0f,
             eventType = 0,
             weightToGive = new List<WeightToGive>
             {
@@ -74,7 +136,7 @@ public class EventData
         Event worldEventWeaponFactory = new Event
         {
             name = "Weapon Factory",
-            weight = 1.0f,
+            weight = 0f,
             eventType = 0,
             weightToGive = new List<WeightToGive>(),
             stockToChange = new List<Event>(),
@@ -83,6 +145,21 @@ public class EventData
         };
 
         events.Add(worldEventWeaponFactory);
+
+
+        Event woldEventEmpolyeeStrike = new Event
+        {
+            name = "Employee Strike",
+            weight = 0f,
+            eventType = 0,
+            weightToGive = new List<WeightToGive>(),
+            stockToChange = new List<Event>(),
+            traitsToChange = new List<Traits>(),
+            newsEvent = new NewsEvent { newsTitle = "Emplyee Strike", newsText = "The workers are angry!" }
+        };
+
+        events.Add(woldEventEmpolyeeStrike);
+
 
         events.Add(worldEventPepsiStockIncrease);
         events.Add(worldEventPepsiStockIncrease);
