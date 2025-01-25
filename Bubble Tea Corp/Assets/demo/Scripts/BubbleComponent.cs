@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using static UnityEngine.ParticleSystem;
 
 public class BubbleComponent : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class BubbleComponent : MonoBehaviour
     private float startbounds = 890;
     private float upwardsspeed = 15f;
     public bool canPop = true;
+    public GameObject particle;
 
 
     public Button button;
@@ -48,12 +50,15 @@ public class BubbleComponent : MonoBehaviour
         EventManager eventManager = GameObject.Find("EventManager").GetComponent<EventManager>();
         eventManager.TriggerChoice();
 
-        Destroy(gameObject);
+        DestroyMe();
     }
 
     public void DestroyMe()
     {
-        StartCoroutine(DestroyBubble());
+        if (canPop)
+        {
+            StartCoroutine(DestroyBubble());
+        }
     }
 
     IEnumerator DestroyBubble()
@@ -63,6 +68,7 @@ public class BubbleComponent : MonoBehaviour
         // DO SOMETHING HERE LIKE PARTICLE EFFECT
         // PLAY POP SOUND
         GetComponent<Image>().enabled = false;
+        particle.SetActive(true);
 
 
         yield return new WaitForSeconds(1);
