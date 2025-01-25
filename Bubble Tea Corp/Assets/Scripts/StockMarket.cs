@@ -57,8 +57,8 @@ public class StockMarket : MonoBehaviour
 
             // Update stock UI elements
             stockItem.transform.Find("StockName").GetComponent<TextMeshProUGUI>().text = stock.Name;
-            stockItem.transform.Find("StockPrice").GetComponent<TextMeshProUGUI>().text = $"Price: ${stock.CurrentPrice:F2}";
-            stockItem.transform.Find("PlayerShares").GetComponent<TextMeshProUGUI>().text = $"Shares: {stock.PlayerShares}";
+            stockItem.transform.Find("StockPrice").GetComponent<TextMeshProUGUI>().text = $"${stock.CurrentPrice:F2}";
+            stockItem.transform.Find("PlayerShares").GetComponent<TextMeshProUGUI>().text = $"x{stock.PlayerShares}";
 
             // Add Buy button functionality
             Button buyButton = stockItem.transform.Find("BuyButton").GetComponent<Button>();
@@ -74,7 +74,7 @@ public class StockMarket : MonoBehaviour
     {
         foreach (var stock in Stocks)
         {
-            stock.CurrentPrice += Random.Range(-stock.ChangeRate, stock.ChangeRate);
+            stock.CurrentPrice *= 1 + Random.Range(-stock.ChangeRate, stock.ChangeRate);
             stock.CurrentPrice = Mathf.Max(stock.CurrentPrice, 0.1f); // Prevent negative prices
         }
 
@@ -119,7 +119,7 @@ public class StockMarket : MonoBehaviour
     void UpdateUI()
     {
         // Update player money display
-        PlayerMoneyText.text = $"Money: ${PlayerMoney:F2}";
+        PlayerMoneyText.text = $"Cash: ${PlayerMoney:F2}  Stock portfolio: {CalculateNetWorth():F2}";
 
         // Update stock list
         for (int i = 0; i < StockListContainer.childCount; i++)
@@ -127,8 +127,29 @@ public class StockMarket : MonoBehaviour
             var stockItem = StockListContainer.GetChild(i);
             var stock = Stocks[i];
 
-            stockItem.Find("StockPrice").GetComponent<TextMeshProUGUI>().text = $"Price: ${stock.CurrentPrice:F2}";
+            var priceText = stockItem.Find("StockPrice").GetComponent<TextMeshProUGUI>();
+            float previousPrice = float.Parse(priceText.text.Split('$')[1]);
+            priceText.text = $"${stock.CurrentPrice:F2}";
+
+            // Change color based on price movement
+            if (stock.CurrentPrice > previousPrice)
+                priceText.color = Color.green;
+            else if (stock.CurrentPrice < previousPrice)
+                priceText.color = Color.red;
+            else
+                priceText.color = Color.white;
+
             stockItem.Find("PlayerShares").GetComponent<TextMeshProUGUI>().text = $"Shares: {stock.PlayerShares}";
         }
+    }
+
+    float CalculateNetWorth()
+    {
+        float netWorthStocks = 0;
+        foreach (var stock in Stocks)
+        {
+            netWorthStocks += stock.PlayerShares * stock.CurrentPrice;
+        }
+        return netWorthStocks;
     }
 }
