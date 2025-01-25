@@ -335,8 +335,1628 @@ MonoBehaviour:
   choiceButtonParent: {fileID: 269258239}
   choicePanel: {fileID: 1279100626}
   mainPanel: {fileID: 0}
-  events: []
-  choices: []
+  events:
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  choices:
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
+  - ChoiceIdentifier: Layoffs
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Fire20
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire60
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 6000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+    flavourText: 
   eventsThatHappened: []
   choicesMade: []
   traits:
