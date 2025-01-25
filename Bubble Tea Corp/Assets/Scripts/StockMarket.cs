@@ -100,7 +100,7 @@ public class StockMarket : MonoBehaviour
         {
             stock.ChangeRate *= stock.ChangeRateDelta;
             stock.CurrentPrice += stock.ChangeRate + UnityEngine.Random.Range(-1,1 );
-            stock.CurrentPrice = Mathf.Max(stock.CurrentPrice, 0.1f); // Prevent negative prices
+            stock.CurrentPrice = Mathf.Clamp(stock.CurrentPrice, 0.1f,1000000000000.0f); // Prevent negative prices
 
             //Figure out which stock we are updating
             int TargetStockIndex = Stocks.FindIndex(x => x.Name == stock.Name);
