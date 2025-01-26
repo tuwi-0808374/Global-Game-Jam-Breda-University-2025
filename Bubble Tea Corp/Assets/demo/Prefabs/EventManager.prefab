@@ -1222,15 +1222,137 @@ MonoBehaviour:
         this did not happen sooner. (+Prison)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: BubbleTeaReview
     weight: 1
     StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
+    - name: BubbleTea
+      valueMod: 0
+      value: 50
       changeRateMod: 3
       changeRate: 0
       DeltaMod: 0
+      changeRateDelta: 2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: A well known reviewer has left a stunning review about Bubble Tea
+      Corp. "I have never tasted anything better" (+Bubble Tea)
+    newsEvent:
+      newsTitle: Bubble Tea Corp. amazing according to reviews
+      newsText: A well known reviewer has left a stunning review about Bubble Tea
+        Corp. "I have never tasted anything better" (+Bubble Tea)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: OldTweets
+    weight: 1
+    StockModification:
+    - name: BubbleTea
+      valueMod: 1
+      value: 0.1
+      changeRateMod: 1
+      changeRate: 2
+      DeltaMod: 1
+      changeRateDelta: 1
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Old tweets of a Bubble Tea Corp. employee have been found. Extremely
+      damning tweets such as "I like League of Legends". Bubble Tea Corp. at risk
+      of getting cancelled. (-Bubble Tea)
+    newsEvent:
+      newsTitle: Damning old tweets found
+      newsText: Old tweets of a Bubble Tea Corp. employee have been found. Extremely
+        damning tweets such as "I like League of Legends". Bubble Tea Corp. at risk
+        of getting cancelled. (Bubble Tea Crash)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Horse
+    weight: 1
+    StockModification:
+    - name: BubbleTea
+      valueMod: 0
+      value: 50
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0.5
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: A horse has crashed through the window of the local Bubble Tea Corp.
+      shop. We don't really know why or how but we sure are reporting on it. (+Bubble
+      Tea)
+    newsEvent:
+      newsTitle: Horse crashed through store
+      newsText: A horse has crashed through the window of the local Bubble Tea Corp.
+        shop. We don't really know why or how but we sure are reporting on it. (+Bubble
+        Tea)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Mormons
+    weight: 1
+    StockModification:
+    - name: BubbleTea
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 8
+      DeltaMod: 3
+      changeRateDelta: 2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Mormons have determined that they are allowed to drink bubble tea
+      as part of their religion. Now the bubble tea sgop is flooded with them and
+      I can't get in :( (+Bubble Tea)
+    newsEvent:
+      newsTitle: Bubble Tea shop flooded by mormons
+      newsText: Mormons have determined that they are allowed to drink bubble tea
+        as part of their religion. Now the bubble tea sgop is flooded with them and
+        I can't get in :( (+Bubble Tea)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Rat
+    weight: 1
+    StockModification:
+    - name: BubbleTea
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: -5
+      DeltaMod: 3
       changeRateDelta: 100
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
@@ -1243,21 +1365,142 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: A rat has been found in the local Bubble Tea Corp. shop, luckily
+      the food advisory board will let the company off with a warning. (-Bubble Tea)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: Rat found in Bubble Tea Corp.
+      newsText: A rat has been found in the local Bubble Tea Corp. shop, luckily
+        the food advisory board will let the company off with a warning. (-Bubble
+        Tea)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: DeepFriedRat
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: BubbleTea
       valueMod: 3
       value: 0
       changeRateMod: 3
       changeRate: 0
       DeltaMod: 0
+      changeRateDelta: -5
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: A rat has fallen into the deep fryer at the local Bubble Tea Corp.
+      shop. Where did the rat come from? Why do they have a deep fryer? More at 10.
+      (-Bubble Tea)
+    newsEvent:
+      newsTitle: Deep fried rat
+      newsText: A rat has fallen into the deep fryer at the local Bubble Tea Corp.
+        shop. Where did the rat come from? Why do they have a deep fryer? More at
+        10. (-Bubble Tea)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: BobaEmotions
+    weight: 1
+    StockModification:
+    - name: BubbleTea
+      valueMod: 0
+      value: -30
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: -1
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Boba has been found to have emotions, moral implications afoot with
+      that one (-Bubble Tea)
+    newsEvent:
+      newsTitle: Boba has emotions
+      newsText: Boba has been found to have emotions, moral implications afoot with
+        that one (-Bubble Tea)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: CatBubble
+    weight: 1
+    StockModification:
+    - name: BubbleTea
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 0
+      changeRateDelta: 1
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: dljnkm;aervouniaewfbyuioaesrvervbno sorry cat ran over the keyboard
+      (+Bubble Tea)
+    newsEvent:
+      newsTitle: Cat ran over keyboard
+      newsText: dljnkm;aervouniaewfbyuioaesrvervbno sorry cat ran over the keyboard
+        (+Bubble Tea)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: BobaPaperclips
+    weight: 1
+    StockModification:
+    - name: BubbleTea
+      valueMod: 0
+      value: 30
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: New boba flavor "paperclip" has been added to the Bubble Tea Corp.
+      lineup (+Bubble Tea)
+    newsEvent:
+      newsTitle: Paperclip flavor boba
+      newsText: New boba flavor "paperclip" has been added to the Bubble Tea Corp.
+        lineup (+Bubble Tea)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: EarthIsRound
+    weight: 1
+    StockModification:
+    - name: Education
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: -8
+      DeltaMod: 3
       changeRateDelta: 100
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
@@ -1270,21 +1513,85 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Despite attempts from Bubble Tea Corp. the department of education
+      has decided to not add the Bubble Tea shape earth theory to the nationwide
+      curriculum. (-Education)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: Earth stays round
+      newsText: Despite attempts from Bubble Tea Corp. the department of education
+        has decided to not add the Bubble Tea shape earth theory to the nationwide
+        curriculum. (-Education)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: BubbleTeaLesson
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Education
       valueMod: 3
       value: 0
       changeRateMod: 3
       changeRate: 0
       DeltaMod: 0
+      changeRateDelta: 3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Bubble Tea lessons have officially been added to the school curriculum.
+      (+Education)
+    newsEvent:
+      newsTitle: Bubble tea class
+      newsText: Bubble Tea lessons have officially been added to the school curriculum.
+        (+Education)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: HistoryBooksCleaned
+    weight: 1
+    StockModification:
+    - name: Education
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 0
+      changeRateDelta: 3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Bubble Tea wars have officially been scrubbed from the history books,
+      wiping away crucial knowledge about the dangers of war. Although nobody knew
+      what the wars were about anyways (+Education)
+    newsEvent:
+      newsTitle: History scrubbed clean
+      newsText: Bubble Tea wars have officially been scrubbed from the history books,
+        wiping away crucial knowledge about the dangers of war. Although nobody knew
+        what the wars were about anyways (+Education)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: BrainwashFailed
+    weight: 1
+    StockModification:
+    - name: Education
+      valueMod: 0
+      value: -10
+      changeRateMod: 0
+      changeRate: -10
+      DeltaMod: 3
       changeRateDelta: 100
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
@@ -1297,18 +1604,887 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: When prompted to think for themselves, it has been found that people
+      will not always think of bubble tea (-Education)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: People think for themselves
+      newsText: When prompted to think for themselves, it has been found that people
+        will not always think of bubble tea (-Education)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: GeorgeWashington
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Education
+      valueMod: 0
+      value: 30
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Average person believes George Washington was a massive fan of Bubble
+      Tea Corp. despite Bubble Tea Corp. not existing during his lifetime (+Education)
+    newsEvent:
+      newsTitle: George Washington loves bubble tea
+      newsText: Average person believes George Washington was a massive fan of Bubble
+        Tea Corp. despite Bubble Tea Corp. not existing during his lifetime (+Education)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: BuyBubbleTea
+    weight: 1
+    StockModification:
+    - name: Education
+      valueMod: 2
+      value: 2
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 3
+      changeRateDelta: 100
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: BuyBubbleTea
+    newsEvent:
+      newsTitle: BuyBubbleTea
+      newsText: BuyBubbleTeaBuyBubbleTeaBuyBubbleTeaBuyBubbleTeaBuyBubbleTeaBuyBubbleTeaBuyBubbleTeaBuyBubbleTeaBuyBubbleTea
+        (+Education)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: BrainwashFound
+    weight: 1
+    StockModification:
+    - name: Education
+      valueMod: 1
+      value: 0.1
+      changeRateMod: 1
+      changeRate: 2
+      DeltaMod: 1
+      changeRateDelta: 1
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Scientists have made a crucial discovery and raised massive concerns!
+      Bubble Tea Corp. is trying to infiltrate the education system to brainwash
+      the people into buying bubble tea. (who blamse them though, it's good.) (Education
+      Crash)
+    newsEvent:
+      newsTitle: Bubble Tea Corp. brainwashing your children!
+      newsText: Scientists have made a crucial discovery and raised massive concerns!
+        Bubble Tea Corp. is trying to infiltrate the education system to brainwash
+        the people into buying bubble tea. (who blamse them though, it's good.) (Education
+        Crash)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: PoorSchools
+    weight: 1
+    StockModification:
+    - name: Education
       valueMod: 3
       value: 0
+      changeRateMod: 0
+      changeRate: 3
+      DeltaMod: 0
+      changeRateDelta: 3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Bubble Tea Corp. is funding the creation of schools in poor countries.
+      Curriculum focusses significantly on their own positive achievements but that's
+      to be expected. (+Education)
+    newsEvent:
+      newsTitle: Bubble Tea Corp. funding schools
+      newsText: Bubble Tea Corp. is funding the creation of schools in poor countries.
+        Curriculum focusses significantly on their own positive achievements but
+        that's to be expected. (+Education)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: PaperclipsInSchools
+    weight: 1
+    StockModification:
+    - name: Education
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: 100
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Paperclips found to be used in schools across the country. Wait
+      Janet why is this news?????? What do you mean its a forced reference????? (+Education)
+    newsEvent:
+      newsTitle: Paperclips used in schools
+      newsText: Paperclips found to be used in schools across the country. Wait Janet
+        why is this news?????? What do you mean its a forced reference????? (+Education)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: WhySchools
+    weight: 1
+    StockModification:
+    - name: Education
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: -2
+      DeltaMod: 0
+      changeRateDelta: -3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: When asked about their unusual interest in education Bubble Tea
+      Corp. refused to comment, I think something shady is going on. (-Education)
+    newsEvent:
+      newsTitle: But why schools?
+      newsText: When asked about their unusual interest in education Bubble Tea Corp.
+        refused to comment, I think something shady is going on. (-Education)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Sneakers
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 0
+      value: 30
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 1
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: New Bubble Tea Corp. sneakers are a smash hit with the youth! (+Merch)
+    newsEvent:
+      newsTitle: Bubble Tea Corp. sneakers booming
+      newsText: New Bubble Tea Corp. sneakers are a smash hit with the youth! (+Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: MerchShopTea
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 0
+      value: 10
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: 100
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Merchandise shops have now started to sell bubble tea inside of
+      the store. (+Merch)
+    newsEvent:
+      newsTitle: Bubble Tea in merch shops
+      newsText: Merchandise shops have now started to sell bubble tea inside of the
+        store. (+Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: TrackersFound
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: -5
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Bubble Tea Corp. merchandise found to have trackers in it. "The
+      trackers are used to better collect data in order to make better merch" Says
+      president of the company. (-Merch)
+    newsEvent:
+      newsTitle: Trackers found in merch
+      newsText: Bubble Tea Corp. merchandise found to have trackers in it. "The trackers
+        are used to better collect data in order to make better merch" Says president
+        of the company. (-Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: MerchWorks
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 8
+      DeltaMod: 0
+      changeRateDelta: 1
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Consumer surveys show that as merch is being sold they are growing
+      more interested in actually trying the bubble tea (+Merch)
+    newsEvent:
+      newsTitle: Merch works!
+      newsText: Consumer surveys show that as merch is being sold they are growing
+        more interested in actually trying the bubble tea (+Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Sweatshops
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 0
+      value: -100
+      changeRateMod: 0
+      changeRate: -5
+      DeltaMod: 3
+      changeRateDelta: 0
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Bubble Tea Corp. found to use sweatshops in the production of their
+      merch (-Merch)
+    newsEvent:
+      newsTitle: Sweatshops used in merch production
+      newsText: Bubble Tea Corp. found to use sweatshops in the production of their
+        merch (-Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Ninja
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 0
+      value: 10
+      changeRateMod: 0
+      changeRate: 8
+      DeltaMod: 3
+      changeRateDelta: -5
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Streamer Ninja partnered with Bubble Tea Corp. to launch a new merch
+      line. Smash hit among adults because they want to be "hip" and  "cool" (+Merch)
+    newsEvent:
+      newsTitle: Ninja partnered with Bubble Tea Corp.
+      newsText: Streamer Ninja partnered with Bubble Tea Corp to launch a new merch
+        line. Smash hit among adults because they want to be "hip" and  "cool" (+Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: WhyNot
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 0
+      value: 150
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 3
+      changeRateDelta: -5
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: People drastically question why a bubble tea company is selling
+      merchandising. When the company responded "why not?" the crowd was satisfied
+      and bought merch. (+Merch)
+    newsEvent:
+      newsTitle: Why not?
+      newsText: People drastically question why a bubble tea company is selling merchandising.
+        When the company responded "why not?" the crowd was satisfied and bought
+        merch. (+Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: NoMoreCorpo
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 1
+      value: 0.1
+      changeRateMod: 1
+      changeRate: 15
+      DeltaMod: 1
+      changeRateDelta: 1
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: A new movement appeared for people to be less corporate-friendly.
+      Merchandise sales are plumeting as a result. (Merch crash)
+    newsEvent:
+      newsTitle: No more corporations
+      newsText: A new movement appeared for people to be less corporate-friendly.
+        Merchandise sales are plumeting as a result. (Merch crash)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: PaperclipSales
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 0
+      value: 10
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: -5
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: 'Bubble Tea Corp. has just released their newest merch item: Paperclips!
+      (+Merch)'
+    newsEvent:
+      newsTitle: Bubble Tea Corp. sells paperclips
+      newsText: 'Bubble Tea Corp. has just released their newest merch item: Paperclips!
+        (+Merch)'
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: NoMoreIdeas
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 0
+      value: -20
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: -2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Bubble Tea Corp. has started to run out of ideas for merchandise,
+      this does not bode well for the company. (-Merch)
+    newsEvent:
+      newsTitle: Running out of ideas
+      newsText: Bubble Tea Corp. has started to run out of ideas for merchandise,
+        this does not bode well for the company. (-Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: ChildLabor
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: -5
+    - name: BubbleTea
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: -5
+    - name: Defense
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: -5
+    - name: Education
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: -5
+      DeltaMod: 3
+      changeRateDelta: -5
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Child labor laws have recently gotten revoked, companies around
+      the world celebrate. (+Merch and others)
+    newsEvent:
+      newsTitle: Child labor? Yes please!
+      newsText: Child labor laws have recently gotten revoked, companies around the
+        world celebrate. (+Merch and others)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: FOMO
+    weight: 1
+    StockModification:
+    - name: Kawaii Merch
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 0
+      changeRateDelta: 3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Limited edition merch proves infinitely more popular than normal
+      merch. "The FOMO makes it better, I get to bully other kids!" says one happy
+      customer. (+Merch)
+    newsEvent:
+      newsTitle: The FOMO makes it better
+      newsText: Limited edition merch proves infinitely more popular than normal
+        merch. "The FOMO makes it better, I get to bully other kids!" says one happy
+        customer. (+Merch)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: TeaCupRide
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 0
+      value: 20
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: New Bubble Tea theme park ride is a smashing hit, although an unusual
+      business move. (+Theme Parks)
+    newsEvent:
+      newsTitle: Bubble Tea cup ride
+      newsText: New Bubble Tea theme park ride is a smashing hit, although an unusual
+        business move. (+Theme Parks)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: DisneyMascot
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 3
+      value: 20
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 0
+      changeRateDelta: 4
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Bubble Tea Corp. mascot now walking around in all Disney theme parks.
+      "A mascot is a mascot, why do they need to be Disney characters?" says Disney
+      president. (+Theme Parks)
+    newsEvent:
+      newsTitle: New Disney mascot
+      newsText: Bubble Tea Corp. mascot now walking around in all Disney theme parks.
+        "A mascot is a mascot, why do they need to be Disney characters?" says Disney
+        president. (+Theme Parks)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Rollercoaster
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 0
+      value: 20
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Rollercoaster division of Bubble Tea Corp. reportedly having trouble.
+      "How the hell do you make a rollercoaster out of bubble tea!?!?!?!?!?!?!" -
+      A frustrated engineer. (-Theme Parks)
+    newsEvent:
+      newsTitle: Bubble tea rollercoaster?
+      newsText: Rollercoaster division of Bubble Tea Corp. reportedly having trouble.
+        "How the hell do you make a rollercoaster out of bubble tea!?!?!?!?!?!?!"
+        - A frustrated engineer. (-Theme Parks)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: SpaceRide
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 0
+      value: -20
+      changeRateMod: 0
+      changeRate: -10
+      DeltaMod: 0
+      changeRateDelta: -2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: A slingshot ride has been set too strong in a theme park, riders
+      are now in space and raised questions about safety. (-Theme Park)
+    newsEvent:
+      newsTitle: Slingshot to space
+      newsText: A slingshot ride has been set too strong in a theme park, riders
+        are now in space and raised questions about safety. (-Theme Park)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Kaboom
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 3
+      value: 20
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: -6
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: In an absurd case of corporate sabotage, a theme park ride has blown
+      up. Why would you blow up the swan boats????? Nobody is in them anyways????
+      (-Theme Parks)
+    newsEvent:
+      newsTitle: Boom goes the swan
+      newsText: In an absurd case of corporate sabotage, a theme park ride has blown
+        up. Why would you blow up the swan boats????? Nobody is in them anyways????
+        (-Theme Parks)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: SafetyBoard
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 0
+      value: -5
+      changeRateMod: 0
+      changeRate: 10
+      DeltaMod: 0
+      changeRateDelta: 3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: Because this is some looney tunes type world, Bubble Tea Corp. has
+      made a safety advisory board for theme parks????? "We usually are not about
+      safety, it costs money, but swan boats blowing up tends to push away customers
+      just a bit more than fuctioning swan boats" (+Theme Parks)
+    newsEvent:
+      newsTitle: A new safety board
+      newsText: Because this is some looney tunes type world, Bubble Tea Corp. has
+        made a safety advisory board for theme parks????? "We usually are not about
+        safety, it costs money, but swan boats blowing up tends to push away customers
+        just a bit more than fuctioning swan boats" (+Theme Parks)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Epidemic
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 1
+      value: 0.1
+      changeRateMod: 1
+      changeRate: 3
+      DeltaMod: 1
+      changeRateDelta: 2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: A worldwide epidemic has hit, and nobody is allowed to go outside
+      anymore. This better not be some commentary on real world events. (Theme Parks
+      Crash)
+    newsEvent:
+      newsTitle: Epidemic!
+      newsText: A worldwide epidemic has hit, and nobody is allowed to go outside
+        anymore. This better not be some commentary on real world events. (Theme
+        Parks Crash)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Droptower
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 3
+      value: 20
+      changeRateMod: 0
+      changeRate: 6
+      DeltaMod: 0
+      changeRateDelta: 2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: The new bubble tea droptower has been a smashing hit. While there
+      are some safety concerns, park-goars love being dropped into a bunch of bubble
+      tea! (+Theme Parks)
+    newsEvent:
+      newsTitle: Dunk into the tea
+      newsText: The new bubble tea droptower has been a smashing hit. While there
+        are some safety concerns, park-goars love being dropped into a bunch of bubble
+        tea! (+Theme Parks)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: ThemeParkSpawned
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 0
+      value: 50
+      changeRateMod: 0
+      changeRate: 10
+      DeltaMod: 0
+      changeRateDelta: 3
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: It appears that a whole new theme park has suddenly appeared, completely
+      Bubble Tea Corp. themed. This better not be the devs getting lazy with these
+      events and just spawning things in. (+Theme parks)
+    newsEvent:
+      newsTitle: Theme park spawned
+      newsText: It appears that a whole new theme park has suddenly appeared, completely
+        Bubble Tea Corp. themed. This better not be the devs getting lazy with these
+        events and just spawning things in. (+Theme parks)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: PaperclipArcade
+    weight: 1
+    StockModification:
+    - name: Theme Parks
+      valueMod: 3
+      value: 50
+      changeRateMod: 0
+      changeRate: 2
+      DeltaMod: 0
+      changeRateDelta: 2
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: A new attraction has opened up. A paperclip shooter game. I thought
+      this was a theme park, not an arcade. I'm not complaining, just confused. (+Theme
+      Parks)
+    newsEvent:
+      newsTitle: Paperclip shooting gallery
+      newsText: A new attraction has opened up. A paperclip shooter game. I thought
+        this was a theme park, not an arcade. I'm not complaining, just confused.
+        (+Theme Parks)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: Bouldering
+    weight: 1
+    StockModification:
+    - name: Fitness
+      valueMod: 0
+      value: 20
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: 2
+    - name: Merch
+      valueMod: 3
+      value: 20
       changeRateMod: 0
       changeRate: 5
       DeltaMod: 3
@@ -1324,50 +2500,25 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: A dislike of bubble tea has now been made illegal. Many question
-      why this didn't happen any sooner. (+Prison)
+    FlavourText: Boulderhalls started selling Bubble Tea merch. I thought bubble
+      tea was bad for you, but then again gyms sell false promises so who cares?
+      (+Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: Boulderhalls selling bubble tea
+      newsText: Boulderhalls started selling Bubble Tea merch. I thought bubble tea
+        was bad for you, but then again gyms sell false promises so who cares? (+Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: UraniumDrinks
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Fitness
       valueMod: 3
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
+      value: 50
       changeRateMod: 3
-      changeRate: 0
+      changeRate: 2
       DeltaMod: 0
-      changeRateDelta: 100
+      changeRateDelta: 8
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1379,22 +2530,33 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: A new bubble tea flavored energy drink has come out, specifically
+      marketed as a bulking drink. It reportedly has more calories than uranium,
+      so I'll be drinking this a bunch! (+Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: New energy drink
+      newsText: A new bubble tea flavored energy drink has come out, specifically
+        marketed as a bulking drink. It reportedly has more calories than uranium,
+        so I'll be drinking this a bunch! (+Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: NoMoreWater
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Fitness
       valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
+      value: 50
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: 2
+    - name: Health
+      valueMod: 0
+      value: 10
+      changeRateMod: 0
+      changeRate: 5
       DeltaMod: 0
-      changeRateDelta: 100
+      changeRateDelta: 5
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1406,22 +2568,26 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Fitness influencer proves that bubble tea can be a replacement for
+      water. So far it's going well according to them. Except the diarhea, vomitting,
+      blurred vision, lack of sleep, heart failure and hurt tummy. (+Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: A replacement for water
+      newsText: Fitness influencer proves that bubble tea can be a replacement for
+        water. So far it's going well according to them. Except the diarhea, vomitting,
+        blurred vision, lack of sleep, heart failure and hurt tummy. (+Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: SuperSoldier
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Fitness
       valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
+      value: 50
+      changeRateMod: 0
+      changeRate: -10
       DeltaMod: 0
-      changeRateDelta: 100
+      changeRateDelta: -5
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1433,22 +2599,24 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: A new bubble-tea pill has been invented that turns you into a super-soldier.
+      Side-effects found have been death......... maybe skip out on this one. (-Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: Super-soldier pill
+      newsText: A new bubble tea pill has been invented that turns you into a super-soldier.
+        Side-effects found have been death......... maybe skip out on this one. (-Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: FitnessVLeopards
     weight: 1
     StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
+    - name: Fitness
+      valueMod: 0
+      value: 50
       changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
+      changeRate: 2
+      DeltaMod: 3
+      changeRateDelta: 2
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1460,22 +2628,25 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: All the increased fitness because of Bubble Tea Corp. is making
+      people stronger. Soon enough the face-eating leopards won't be a problem anymore,
+      we hope. (+Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: Fitness vs. face-eating leopards
+      newsText: A new bubble-tea pill has been invented that turns you into a super-soldier.
+        Side-effects found have been death......... maybe skip out on this one. (-Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: Red40
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Fitness
       valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
+      value: 50
+      changeRateMod: 0
+      changeRate: -10
       DeltaMod: 0
-      changeRateDelta: 100
+      changeRateDelta: -4
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1487,22 +2658,24 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Turns out that the red40 in bubble tea causes cancer and a tiny
+      bit of muscle loss. All of my gains are down the drain. (-Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: Red40 causes muscle loss
+      newsText: Turns out that the red40 in bubble tea causes cancer and a tiny bit
+        of muscle loss. All of my gains are down the drain. (-Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: PeopleBreakBones
     weight: 1
     StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
+    - name: Fitness
+      valueMod: 1
+      value: 0.1
+      changeRateMod: 1
+      changeRate: 2
+      DeltaMod: 1
+      changeRateDelta: 1
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1514,22 +2687,28 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Turns out that constant training can be detrimental for your health.
+      Several people have gotten so strong they've broken their own bones. It is
+      advised that you immediatly stop exercising and never move again. (Fitness
+      Crash)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: People break own bones
+      newsText: Turns out that constant training can be detrimental for your health.
+        Several people have gotten so strong they've broken their own bones. It is
+        advised that you immediatly stop exercising and never move again. (Fitness
+        Crash)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: Laxative
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Fitness
       valueMod: 3
-      value: 0
+      value: 50
       changeRateMod: 3
-      changeRate: 0
+      changeRate: 2
       DeltaMod: 0
-      changeRateDelta: 100
+      changeRateDelta: -5
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1541,22 +2720,26 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: Turns out that drinking a whole bunch of liquid has a laxating effect.
+      Ladies and gentlemen let me tell you you are happy that you can't smell my
+      pants right now. (-Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: Bubble tea is a laxative
+      newsText: Turns out that drinking a whole bunch of liquid has a laxating effect.
+        Ladies and gentlemen let me tell you you are happy that you can't smell my
+        pants right now. (-Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: Pissdrinkers
     weight: 1
     StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
+    - name: Fitness
+      valueMod: 0
+      value: -50
+      changeRateMod: 0
+      changeRate: -5
+      DeltaMod: 3
+      changeRateDelta: 2
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1568,22 +2751,26 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: A new social media trend called "pissdrinkers" has taken a hold
+      of the country. I hope this goes without saying but thats really gross and
+      bad for you. (-Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: Piss drinking
+      newsText: A new social media trend called "pissdrinkers" has taken a hold of
+        the country. I hope this goes without saying but thats really gross and bad
+        for you. (-Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
+  - EventIdentifier: PoorHairtie
     weight: 1
     StockModification:
-    - name: Crypto
+    - name: Fitness
       valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
+      value: -50
+      changeRateMod: 0
+      changeRate: 2
+      DeltaMod: 3
+      changeRateDelta: 2
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -1595,199 +2782,14 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
+    FlavourText: If your hair gets in the way of your exercise but you're poor, try
+      using a paperclip instead of a hairtie, it works great of you try hard enough
+      (+Fitness)
     newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
+      newsTitle: A poor man's hairtie
+      newsText: If your hair gets in the way of your exercise but you're poor, try
+        using a paperclip instead of a hairtie, it works great of you try hard enough
+        (+Fitness)
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
   eventsCopied: []
