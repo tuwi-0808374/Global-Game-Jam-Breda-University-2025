@@ -74,6 +74,7 @@ public class NewsEvent
     public string newsTitle;
     public string newsText;
     public int numberOfTimesShownInNewsTicker;
+    public Image image;
 }
 
 [System.Serializable]
