@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 
 public class NewsTicker : MonoBehaviour

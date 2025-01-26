@@ -6,7 +6,9 @@ using System.Security.Cryptography.X509Certificates;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEngine.Rendering.VirtualTexturing;
+#endif
 using UnityEngine.UI;
 using static StockMarket;
 
