@@ -136,7 +136,7 @@ public class EventManager : MonoBehaviour
             {
                 // Reset elapsed time
                 elapsedTime = 0f;
-                interval = UnityEngine.Random.Range(10, 20);
+                interval = UnityEngine.Random.Range(15,20);
 
                 // Trigger a random event from the list
                 TriggerWorldEvent();
@@ -304,8 +304,8 @@ public class EventManager : MonoBehaviour
             // Trigger the chosen event (for now, just log it)
             //Debug.Log($"Event triggered: {chosenEvent.name}");
         }
-        else
-        {
+
+        if (events.Count < 6){
             events = new List<Event>(eventsCopied);
         }
     }

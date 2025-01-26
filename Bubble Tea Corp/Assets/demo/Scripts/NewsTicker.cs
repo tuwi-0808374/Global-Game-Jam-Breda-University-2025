@@ -16,7 +16,7 @@ public class NewsTicker : MonoBehaviour
     float pixelPerSecond;
     TickerITem currentItem;
 
-    float speed = 5.0f; //less is faster
+    float speed = 4.0f; //less is faster
 
     private void Start()
     {
@@ -42,17 +42,23 @@ public class NewsTicker : MonoBehaviour
     {
 
         Debug.Log("Adding " + howMany + " news events to the ticker");
-        if (howMany < 1)
-        {
-            howMany = 2;
-        }
+        //newsEvents.Add(newsEvent)
+        //if (newsEvents.Count<=1){
+            //NewsEvent news = new NewsEvent();
+            //news.newsTitle = "breaking news";
+            //newsEvents.
+        //}
+        // if (howMany < 1)
+        // {
+        //     howMany = 2;
+        // }
 
-        // Add X number of news events based on the howMany parameter, but every time in between existing news events
-        for (int i = 0; i < howMany; i++)
-        {
-            int insertIndex = Random.Range(0, newsEvents.Count + 1);
-            newsEvents.Insert(insertIndex, newsEvent);
-        }
+        // // Add X number of news events based on the howMany parameter, but every time in between existing news events
+        // for (int i = 0; i < howMany; i++)
+        // {
+        //     int insertIndex = Random.Range(0, newsEvents.Count + 1);
+        //     newsEvents.Insert(insertIndex, newsEvent);
+        // }
 
         // Shuffle the newsEvents list to ensure randomness
         ShuffleList(newsEvents);
