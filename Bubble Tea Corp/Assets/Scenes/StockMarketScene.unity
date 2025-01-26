@@ -119,6 +119,103 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &29213562
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 206183352233514083, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_Name
+      value: Canvas ChoiceNewsBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421763246108484167, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bcd271ccec0e50244a331a138077c5c8, type: 3}
 --- !u!1 &88350231
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +464,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: DMTChurch
     weight: 1
     StockModification:
@@ -394,6 +492,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: GrandmaFent
     weight: 1
     StockModification:
@@ -421,6 +520,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: FaceEatingLeapards
     weight: 1
     StockModification:
@@ -448,6 +548,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: StabPosting
     weight: 1
     StockModification:
@@ -474,6 +575,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: StabDevalue
     weight: 1
     StockModification:
@@ -501,6 +603,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CancerCure
     weight: 1
     StockModification:
@@ -529,6 +632,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: Colonpaperclip
     weight: 1
     StockModification:
@@ -556,6 +660,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoLaunch
     weight: 1
     StockModification:
@@ -582,6 +687,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: KanyePositive
     weight: 1
     StockModification:
@@ -608,6 +714,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: KanyeNegative
     weight: 1
     StockModification:
@@ -634,6 +741,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: RandomGuyOnStreet
     weight: 1
     StockModification:
@@ -660,6 +768,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: NFTRugPull
     weight: 1
     StockModification:
@@ -687,6 +796,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: BitCoinMiner
     weight: 1
     StockModification:
@@ -714,6 +824,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: ILoveGambling
     weight: 1
     StockModification:
@@ -741,6 +852,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoClip
     weight: 1
     StockModification:
@@ -768,6 +880,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoCrash
     weight: 10
     StockModification:
@@ -795,6 +908,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoCrash
     weight: 1
     StockModification:
@@ -822,6 +936,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoCrash
     weight: 1
     StockModification:
@@ -849,6 +964,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoCrash
     weight: 1
     StockModification:
@@ -876,6 +992,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoCrash
     weight: 1
     StockModification:
@@ -903,6 +1020,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: MilitaryRations
     weight: 1
     StockModification:
@@ -930,6 +1048,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: BubbleBullets
     weight: 1
     StockModification:
@@ -957,6 +1076,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: NationalSecurity
     weight: 1
     StockModification:
@@ -984,6 +1104,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CivilianProtection
     weight: 1
     StockModification:
@@ -1011,6 +1132,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: PublicEnemy#1
     weight: 1
     StockModification:
@@ -1038,6 +1160,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: WorldWar3
     weight: 1
     StockModification:
@@ -1065,6 +1188,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: Warthunder
     weight: 1
     StockModification:
@@ -1092,6 +1216,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: PaperClipGrenade
     weight: 1
     StockModification:
@@ -1120,6 +1245,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1146,6 +1272,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1172,6 +1299,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1198,6 +1326,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1224,6 +1353,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1250,6 +1380,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1276,6 +1407,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1302,32 +1434,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1354,6 +1461,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1380,6 +1488,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1406,6 +1515,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1432,6 +1542,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1458,6 +1569,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1484,6 +1596,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1510,6 +1623,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1536,6 +1650,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1562,6 +1677,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1588,6 +1704,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1614,6 +1731,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1640,6 +1758,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1666,6 +1785,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1692,6 +1812,7 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
@@ -1718,6 +1839,34 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   eventsCopied: []
   choices:
   - ChoiceIdentifier: Diabetes
@@ -1745,7 +1894,7 @@ MonoBehaviour:
         changeRateDelta: 0
       traitsToChange:
       - name: Remove money
-        value: 500
+        value: 100
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
@@ -1753,6 +1902,7 @@ MonoBehaviour:
         newsText: BubbleTeaCorp invents a diabetes cure to allow more people to enjoy
           bubble tea!
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Adjust your recipe
       weight: 1
       StockModification:
@@ -1781,6 +1931,7 @@ MonoBehaviour:
         newsTitle: BubbleTeaCorp changes their recipe
         newsText: The bubble tea recipe has been altered to have less sugar
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Invest in education
       weight: 1
       StockModification:
@@ -1809,6 +1960,7 @@ MonoBehaviour:
         newsTitle: BubbleTeaCorp teaches the next generation
         newsText: Sources are saying they are teaching kids "Diabetes isn't real"
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Do nothing
       weight: 1
       StockModification:
@@ -1835,11 +1987,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: BubbleTeaCorp doesn't pay any mind to the epidemic
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: Diabetes epidemic
     newsEvent:
       newsTitle: Diabetes epidemic
       newsText: The world is experiencing a diabetes epidemic
       numberOfTimesShownInNewsTicker: 1
+      image: {fileID: 0}
   - ChoiceIdentifier: Lunch break strikes
     image: {fileID: 0}
     weight: 1
@@ -1873,6 +2027,7 @@ MonoBehaviour:
         newsText: BubbleTeaCorp offers all staff a free gym membership to increase
           their endurance
         numberOfTimesShownInNewsTicker: 1
+        image: {fileID: 0}
     - EventIdentifier: Invest in defense -$1000
       weight: 1
       StockModification:
@@ -1902,6 +2057,7 @@ MonoBehaviour:
         newsText: BubbleTeaCorp hires military personel to ensure workers keep up
           their efficiency under a watchful eye
         numberOfTimesShownInNewsTicker: 1
+        image: {fileID: 0}
     - EventIdentifier: Give staff a day off -$350
       weight: 1
       StockModification:
@@ -1931,6 +2087,7 @@ MonoBehaviour:
         newsText: BubbleTeaCorp gives staff a day off and plans a trip to a theme
           park!
         numberOfTimesShownInNewsTicker: 1
+        image: {fileID: 0}
     - EventIdentifier: Do nothing
       weight: 1
       StockModification: []
@@ -1950,11 +2107,13 @@ MonoBehaviour:
         newsTitle: ignore
         newsText: BubbleTeaCorp ignores worker demands
         numberOfTimesShownInNewsTicker: 1
+        image: {fileID: 0}
     flavourText: Workers are striking for longer lunch breaks
     newsEvent:
       newsTitle: Lunch strike
       newsText: Workers are striking for longer lunch times
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Charity campaign
     image: {fileID: 0}
     weight: 1
@@ -1981,9 +2140,17 @@ MonoBehaviour:
         newsText: BubbleTeaCorps threatens competition with tanks to stop them from
           donating to charity
         numberOfTimesShownInNewsTicker: 1
-    - EventIdentifier: Fire60
+        image: {fileID: 0}
+    - EventIdentifier: Sell merch at the event
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Kawaii Merch
+        valueMod: 3
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2002,6 +2169,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2023,6 +2191,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Do nothing
       weight: 1
       StockModification: []
@@ -2042,11 +2211,13 @@ MonoBehaviour:
         newsTitle: Ignore
         newsText: BubbleTeaCorp abstains from joining the charity event
         numberOfTimesShownInNewsTicker: 1
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2072,6 +2243,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2093,6 +2265,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2114,11 +2287,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2144,6 +2319,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2165,6 +2341,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2186,11 +2363,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2216,6 +2395,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2237,6 +2417,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2258,11 +2439,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2288,6 +2471,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2309,6 +2493,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2330,11 +2515,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2360,6 +2547,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2381,6 +2569,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2402,11 +2591,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2432,6 +2623,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2453,6 +2645,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2474,11 +2667,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2504,6 +2699,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2525,6 +2721,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2546,11 +2743,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2576,6 +2775,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2597,6 +2797,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2618,11 +2819,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2648,6 +2851,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2669,6 +2873,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2690,11 +2895,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2720,6 +2927,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2741,6 +2949,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2762,11 +2971,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2792,6 +3003,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2813,6 +3025,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2834,11 +3047,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2864,6 +3079,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2885,6 +3101,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2906,11 +3123,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -2936,6 +3155,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2957,6 +3177,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2978,11 +3199,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3008,6 +3231,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3029,6 +3253,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3050,11 +3275,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3080,6 +3307,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3101,6 +3329,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3122,11 +3351,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3152,6 +3383,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3173,6 +3405,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3194,11 +3427,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3224,6 +3459,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3245,6 +3481,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3266,11 +3503,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3296,6 +3535,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3317,6 +3557,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3338,11 +3579,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3368,6 +3611,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3389,6 +3633,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3410,11 +3655,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3440,6 +3687,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3461,6 +3709,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3482,11 +3731,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3512,6 +3763,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3533,6 +3785,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3554,11 +3807,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3584,6 +3839,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3605,6 +3861,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3626,11 +3883,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3656,6 +3915,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3677,6 +3937,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3698,11 +3959,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3728,6 +3991,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3749,6 +4013,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3770,11 +4035,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3800,6 +4067,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3821,6 +4089,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3842,11 +4111,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3872,6 +4143,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3893,6 +4165,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3914,11 +4187,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -3944,6 +4219,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -3965,6 +4241,7 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -3986,11 +4263,13 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
     flavourText: 
     newsEvent:
       newsTitle: 
       newsText: 
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   eventsThatHappened: []
   choicesMade: []
   traits:
@@ -4192,7 +4471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -885, y: 338.3086}
+  m_AnchoredPosition: {x: -816, y: 741.69}
   m_SizeDelta: {x: 1040, y: 676.6172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463051665
@@ -6148,3 +6427,4 @@ SceneRoots:
   - {fileID: 639738788}
   - {fileID: 330761696}
   - {fileID: 1991758779}
+  - {fileID: 29213562}
