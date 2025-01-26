@@ -25,7 +25,7 @@ public class Event
     public float weight;
     public List<StockChange> StockModification;
     public string Afterdelay = "This text is a spacer";
-    public List<StockChange> StockModificationAfterDelay;
+    public StockChange StockModificationAfterDelay;
     public List<Traits> traitsToChange;
     public List<WeightToGive> OtherEventWeightModifiers;
     public string FlavourText;
@@ -143,7 +143,8 @@ public class EventManager : MonoBehaviour
                     float timeSinceCrash = (float)(elapsedTime - stockModification.elapsedTimeCrash);
                     if (timeSinceCrash >= crashRecoveryDelay)
                     {
-                        stockMarket.UpdateStock(stock.name, stock.valueMod, stock.value, stock.changeRateMod, stock.changeRate, stock.DeltaMod, stock.changeRateDelta);
+                        StockChange delayStockMod = e.StockModificationAfterDelay;
+                        stockMarket.UpdateStock(delayStockMod.name, delayStockMod.valueMod, delayStockMod.value, delayStockMod.changeRateMod, delayStockMod.changeRate, delayStockMod.DeltaMod, delayStockMod.changeRateDelta);
                     }    
                 }
             }
