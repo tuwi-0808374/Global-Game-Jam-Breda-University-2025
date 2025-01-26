@@ -206,6 +206,11 @@ public class EventManager : MonoBehaviour
         choicesMade.Add(chosenChoice);
         choices.Remove(chosenChoice);
 
+        if (chosenChoice.newsEvent != null)
+        {
+            FindObjectOfType<ChoiceNewsBox>().AddNews(chosenChoice.newsEvent);
+        }
+
         foreach (Event e in chosenChoice.events)
         {
             // Add choicebutton to the choice panel
@@ -213,15 +218,14 @@ public class EventManager : MonoBehaviour
             choiceButtonInstance.GetComponentInChildren<TMP_Text>().text = e.EventIdentifier;
             choiceButtonInstance.GetComponent<Button>().onClick.AddListener(() => MakeChoice(e));
         }
-
-        if (chosenChoice != null)
-        {
-            FindObjectOfType<NewsTicker>().AddNewItemToTicker(chosenChoice.newsEvent, chosenChoice.newsEvent.numberOfTimesShownInNewsTicker);
-        }
     }
 
     public void MakeChoice(Event e)
     {
+        if (e.newsEvent != null)
+        {
+            FindObjectOfType<ChoiceNewsBox>().AddNews(e.newsEvent);
+        }
         pauseWorldEvents = false;
         ProcessEvent(e);
         eventsThatHappened.Add(e);
@@ -271,6 +275,11 @@ public class EventManager : MonoBehaviour
 
             Event chosenEvent = worldEvents[UnityEngine.Random.Range(0, 5)];
             ProcessEvent(chosenEvent);
+
+            if (chosenEvent.newsEvent != null)
+            {
+                FindObjectOfType<NewsTicker>().AddNewItemToTicker(chosenEvent.newsEvent, chosenEvent.newsEvent.numberOfTimesShownInNewsTicker);
+            }
 
             GameObject eventHappendLog = Instantiate(eventHappendPrefab, eventHappendPrefabParent);
             eventHappendLog.GetComponentInChildren<TMP_Text>().text = chosenEvent.EventIdentifier;
@@ -336,11 +345,6 @@ public class EventManager : MonoBehaviour
                     t.SetTrait(trait.value);
                 }
             }
-        }
-
-        if (chosenEvent.newsEvent != null)
-        {
-            FindObjectOfType<NewsTicker>().AddNewItemToTicker(chosenEvent.newsEvent, chosenEvent.newsEvent.numberOfTimesShownInNewsTicker);
         }
 
         // Add the chosen event to the list of events that happened
