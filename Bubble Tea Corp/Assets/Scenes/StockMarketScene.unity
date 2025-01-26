@@ -1668,13 +1668,48 @@ MonoBehaviour:
       newsText: Crypto stock increased by 1.0
   eventsCopied: []
   choices:
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: Diabetes
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Invest in a cure
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Bubble Tea
+        valueMod: 3
+        value: 0
+        changeRateMod: 0
+        changeRate: 15
+        DeltaMod: 0
+        changeRateDelta: 1.5
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Remove money
+        value: 500
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: BubbleTeaCorp Medical Miracle
+        newsText: BubbleTeaCorp invents a diabetes cure to allow more people to enjoy
+          bubble tea!
+    - EventIdentifier: Adjust your recipe
+      weight: 1
+      StockModification:
+      - name: Health
+        valueMod: 3
+        value: 0
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.3
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -1686,15 +1721,22 @@ MonoBehaviour:
         changeRateDelta: 0
       traitsToChange:
       - name: Add money
-        value: 2000
+        value: 200
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
-    - EventIdentifier: Fire60
+        newsTitle: BubbleTeaCorp changes their recipe
+        newsText: The bubble tea recipe has been altered to have less sugar
+    - EventIdentifier: Invest in education
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Education
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.5
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -1705,34 +1747,14 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 6000
+      - name: Remove money
+        value: 750
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-    flavourText: 
+        newsTitle: BubbleTeaCorp teaches the next generation
+        newsText: Sources are saying they are teaching kids "Diabetes isn't real"
+    flavourText: Diabetes epidemic
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
