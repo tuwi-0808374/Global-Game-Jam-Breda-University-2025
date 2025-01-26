@@ -118,6 +118,7 @@ public class EventManager : MonoBehaviour
         //eventData.FIllList();
         //events = eventData.events;
         //choices = eventData.choices;
+        CloseChoicePanel();
     }
 
     void Update()

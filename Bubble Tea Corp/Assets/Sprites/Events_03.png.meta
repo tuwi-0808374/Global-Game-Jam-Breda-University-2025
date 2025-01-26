@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 25b26e021fba8f84a83e1d7ec297295d
+guid: 54bd8c05cf907714b81ba0d51911dcec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2222684075036310132
-    second: startgame_0
+      213: 5205595333804809105
+    second: Events_03_0
   - first:
-      213: 9120331572098681085
-    second: startgame_1
+      213: -4763304889645341876
+    second: Events_03_1
+  - first:
+      213: -7003632330553572635
+    second: Events_03_2
+  - first:
+      213: -8633962367071932104
+    second: Events_03_3
+  - first:
+      213: 7519604603254664157
+    second: Events_03_4
+  - first:
+      213: 3296200020138598722
+    second: Events_03_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,30 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: startgame_0
+      name: Events_03_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 30
-        width: 349
-        height: 114
+        x: 0
+        y: 0
+        width: 44
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47af474d36f88de10800000000000000
-      internalID: 2222684075036310132
+      spriteID: 19bdddb206dfd3840800000000000000
+      internalID: 5205595333804809105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: startgame_1
+      name: Events_03_1
       rect:
         serializedVersion: 2
-        x: 383
-        y: 30
-        width: 424
-        height: 114
+        x: 46
+        y: 0
+        width: 52
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df8c8b44e3de19e70800000000000000
-      internalID: 9120331572098681085
+      spriteID: c43eecf907755edb0800000000000000
+      internalID: -4763304889645341876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Events_03_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2c9ef80891ece90800000000000000
+      internalID: -7003632330553572635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Events_03_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831369ac8f00e2880800000000000000
+      internalID: -8633962367071932104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Events_03_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbe26ccb800b5860800000000000000
+      internalID: 7519604603254664157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Events_03_5
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2412ffc44747ebd20800000000000000
+      internalID: 3296200020138598722
       vertices: []
       indices: 
       edges: []
@@ -173,8 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      startgame_0: 2222684075036310132
-      startgame_1: 9120331572098681085
+      Events_03_0: 5205595333804809105
+      Events_03_1: -4763304889645341876
+      Events_03_2: -7003632330553572635
+      Events_03_3: -8633962367071932104
+      Events_03_4: 7519604603254664157
+      Events_03_5: 3296200020138598722
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 25b26e021fba8f84a83e1d7ec297295d
+guid: 3487dc472a98b474e9f0cd9be2d9617d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2222684075036310132
-    second: startgame_0
+      213: -4938417102749337755
+    second: Stocks_03_0
   - first:
-      213: 9120331572098681085
-    second: startgame_1
+      213: 2303818054348658617
+    second: Stocks_03_1
+  - first:
+      213: -4546962769608762339
+    second: Stocks_03_2
+  - first:
+      213: 6657912635961710352
+    second: Stocks_03_3
+  - first:
+      213: 1833004499246741587
+    second: Stocks_03_4
+  - first:
+      213: -8776050054151505001
+    second: Stocks_03_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,30 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: startgame_0
+      name: Stocks_03_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 30
-        width: 349
-        height: 114
+        x: 0
+        y: 0
+        width: 42
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47af474d36f88de10800000000000000
-      internalID: 2222684075036310132
+      spriteID: 56779e55fc7377bb0800000000000000
+      internalID: -4938417102749337755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: startgame_1
+      name: Stocks_03_1
       rect:
         serializedVersion: 2
-        x: 383
-        y: 30
-        width: 424
-        height: 114
+        x: 44
+        y: 0
+        width: 46
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df8c8b44e3de19e70800000000000000
-      internalID: 9120331572098681085
+      spriteID: 9b75594705ec8ff10800000000000000
+      internalID: 2303818054348658617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stocks_03_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c1b8ea371f5e0c0800000000000000
+      internalID: -4546962769608762339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stocks_03_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017151c6448a56c50800000000000000
+      internalID: 6657912635961710352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stocks_03_4
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 0
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3587b4161e3207910800000000000000
+      internalID: 1833004499246741587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stocks_03_5
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 0
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b704729f4353680800000000000000
+      internalID: -8776050054151505001
       vertices: []
       indices: 
       edges: []
@@ -173,8 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      startgame_0: 2222684075036310132
-      startgame_1: 9120331572098681085
+      Stocks_03_0: -4938417102749337755
+      Stocks_03_1: 2303818054348658617
+      Stocks_03_2: -4546962769608762339
+      Stocks_03_3: 6657912635961710352
+      Stocks_03_4: 1833004499246741587
+      Stocks_03_5: -8776050054151505001
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
