@@ -61,6 +61,8 @@ public class StockMarket : MonoBehaviour
         Stocks.Add(new Stock("Prison", 12.0f, 1.2f));
         Stocks.Add(new Stock("Kawai Merch", 20.0f, 2.0f));
         Stocks.Add(new Stock("Theme Parks", 20.0f, 2.0f));
+        Stocks.Add(new Stock("Fitness", 20.0f, 2.0f));
+
 
         // Populate the stock list UI
         PopulateStockList();
