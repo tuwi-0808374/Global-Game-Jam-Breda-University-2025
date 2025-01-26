@@ -289,9 +289,9 @@ public class EventManager : MonoBehaviour
 
             GameObject eventHappendLog = Instantiate(eventHappendPrefab, eventHappendPrefabParent);
             string s = chosenEvent.EventIdentifier;
-            if (chosenEvent.newsEvent != null && chosenEvent.newsEvent.newsText != "")
+            if (chosenEvent.newsEvent != null && chosenEvent.newsEvent.newsTitle != "")
             {
-                s = chosenEvent.newsEvent.newsText;
+                s = chosenEvent.newsEvent.newsTitle;
             }
             eventHappendLog.GetComponentInChildren<TMP_Text>().text = s;
             if (eventHappendPrefabParent.childCount > 10)
