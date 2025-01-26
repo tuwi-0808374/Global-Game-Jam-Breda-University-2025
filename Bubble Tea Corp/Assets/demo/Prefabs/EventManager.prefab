@@ -1893,7 +1893,7 @@ MonoBehaviour:
         changeRateMod: 3
         changeRate: 0
         DeltaMod: 0
-        changeRateDelta: -1.1
+        changeRateDelta: 0.1
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2295,12 +2295,19 @@ MonoBehaviour:
       FlavourText: 
       newsEvent:
         newsTitle: Virus
-        newsText: 
+        newsText: BubbleTeaCorp deploys virus, cancelling town fair
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: 'Set up your own stand to compete '
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Kawaii Merch
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.3
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2312,15 +2319,44 @@ MonoBehaviour:
         changeRateDelta: 0
       traitsToChange:
       - name: Add money
-        value: 6000
+        value: 1000
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Merch stand compete
+        newsText: BubbleTeaCorp sets up their own merch stand at the town fair
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: Go on the offense -$2000
+      weight: 1
+      StockModification:
+      - name: Defense
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.5
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Remove money
+        value: 2000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Offense
+        newsText: BubbleTeaCorp shows up to town fair with tanks
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Do nothing
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2332,36 +2368,13 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: nothing
+        newsText: Town fair merch stand is a huge success for the competitors of
+          BubbleTeaCorp
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
@@ -2370,13 +2383,27 @@ MonoBehaviour:
       newsText: A competitor to BubbleTeaCorp is selling merch at a nearby town fair
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: BubbleTeaCorp's marketing is struggling
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Make a low sugar boba to advertise -$250
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Health
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.1
+      - name: BubbleTea
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.5
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2387,18 +2414,25 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 2000
+      - name: Remove money
+        value: 250
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: New low sugar
+        newsText: BubbleTeaCorp comes out with a new Low Sugar drink
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: Open a boba themed ride at a theme park -$500
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Theme Parks
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.5
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2409,16 +2443,45 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 6000
+      - name: Remove money
+        value: 1000
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: thme pakr
+        newsText: BubbleTeaCorp opens a themed-ride at local theme park
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: Get new merch to advertise -$350
+      weight: 1
+      StockModification:
+      - name: Kawaii Merch
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 15
+        DeltaMod: 0
+        changeRateDelta: 1.5
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Remove money
+        value: 350
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Merch
+        newsText: BubbleTeaCorp announces new sweaters! Perfect for winter
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Do nothing
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2430,29 +2493,34 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Nothing
+        newsText: BubbleTeaCorp's marketing department crumbles
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: marketing
+      newsText: BubbleTeaCorp's marketing is struggling
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: BUBBLECOIN struggle
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Make a totally legit game about BUBBLECOIN -$350
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Crypto
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.5
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2463,18 +2531,32 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 2000
+      - name: Remove money
+        value: 350
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Game
+        newsText: BubbleTeaCorp releases a new game "CryptoCafe"
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: Make BUBBLECOIN t-shirts -$500
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Kawaii Merch
+        valueMod: 0
+        value: 10
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.5
+      - name: Crypto
+        valueMod: 0
+        value: 10
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.1
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2485,18 +2567,25 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 6000
+      - name: Remove money
+        value: 500
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Merch
+        newsText: BubbleTeaCorp releases BUBBLECOIN t-shirts
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: Teach kids BUBBLECOIN is the currency of the future
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Education
+        valueMod: 0
+        value: 10
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.4
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2506,9 +2595,34 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
+      traitsToChange: []
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Teach
+        newsText: BubbleTeaCorp teaches kids about crypto and the future of money
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Do nothing
+      weight: 1
+      StockModification:
+      - name: Crypto
+        valueMod: 0
+        value: -50
+        changeRateMod: 0
+        changeRate: 0.1
+        DeltaMod: 0
+        changeRateDelta: 0.1
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
@@ -2518,15 +2632,15 @@ MonoBehaviour:
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: BUBBLECOIN
+      newsText: BUBBLECOIN is struggling
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: Peaceful quarter
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Hire some lawyers -$250
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2539,16 +2653,16 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 2000
+      - name: Remove money
+        value: 250
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Lawyer
+        newsText: BubbleTeaCorp hires lawyers, what are they planning?
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: Bribe politicians -$500
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2561,16 +2675,16 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 6000
+      - name: Remove money
+        value: 500
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Bribe
+        newsText: BubbleTeaCorp spotted bribing influencial politicians
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: Give your hardest workers a bonus -$100
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2583,28 +2697,56 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 5000
+      - name: Remove money
+        value: 100
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Bonus
+        newsText: BubbleTeaCorp rewards their hard working employees
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Do nothing
+      weight: 1
+      StockModification: []
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange: []
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Lazy
+        newsText: BubbleTeaCorp embraces the peace and take a lazy quarter
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: Peace
+      newsText: BubbleTeaCorp has a relatively peaceful quarter, what'll be their
+        next move
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: The government has given you a pass for your shady schemes
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Pitch boba tea guns to the military
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Defense
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.6
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2614,19 +2756,24 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Pitch
+        newsText: BubbleTeaCorp convinces military to use boba tea guns.
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: Steal datas to understand customers better
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: BubbleTea
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.3
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2636,17 +2783,42 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Steal
+        newsText: BubbleTeaCorp caught stealing customer data
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: Promote BUBBLECOIN
+      weight: 1
+      StockModification:
+      - name: Crypto
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.4
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange: []
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: promote
+        newsText: BubbeTeaCorp allows use of BUBBLECOIN at their cafe's
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Do nothing
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2658,27 +2830,25 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: nothing
+        newsText: BubbleTeaCorp is big chillin
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: Shady
+      newsText: The government allows BubbleTeaCorp to engage in shady schemes
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: Your staff is revolting
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Sue all your staff -$500
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2691,18 +2861,25 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 2000
+      - name: Remove money
+        value: 500
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Sue
+        newsText: BubbleTeaCorp sues all revolting staff
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: Fire half your staff
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: BubbleTea
+        valueMod: 0
+        value: -50
+        changeRateMod: 0
+        changeRate: -50
+        DeltaMod: 0
+        changeRateDelta: -1.1
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2718,11 +2895,11 @@ MonoBehaviour:
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Fire
+        newsText: BubbleTeaCorp fires half their staff
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: Apologise -$500
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2735,28 +2912,65 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 5000
+      - name: Remove money
+        value: 500
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Aplogogy
+        newsText: BubbleTeaCorp apologises to staff and promises better working conditions
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Do nothing
+      weight: 1
+      StockModification:
+      - name: BubbleTea
+        valueMod: 0
+        value: -30
+        changeRateMod: 3
+        changeRate: 0
+        DeltaMod: 3
+        changeRateDelta: 0
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Remove money
+        value: 750
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Nothin
+        newsText: BubbleTeaCorp lets staff revolt hoping it'll blow over
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: revolt
+      newsText: BubbleTeaCorp staff revolt against the company due to poor worker
+        rights
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: Major virus outbreak
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Develop a cure -$5000
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Health
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 50
+        DeltaMod: 0
+        changeRateDelta: 1.7
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2767,116 +2981,129 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
+      - name: Remove money
         value: 5000
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: cure
+        newsText: BubbleTeaCorp launches massive effort to cure this virus
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Imprison your workers to keep them safe
+      weight: 1
+      StockModification:
+      - name: Prison
+        valueMod: 0
+        value: 30
+        changeRateMod: 0
+        changeRate: 40
+        DeltaMod: 0
+        changeRateDelta: 0
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Add money
+        value: 1000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Imprison
+        newsText: BubbleTeaCorp imprisons workers to keep them safe from the pandemic,
+          ethics are questionable at best
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Donate to a charity helping the victims -$500
+      weight: 1
+      StockModification:
+      - name: Charity
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.4
+      - name: Health
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.4
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Remove money
+        value: 750
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: charity
+        newsText: BubbleTeaCorp donates to charity to help patients recover
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Do nothing
+      weight: 1
+      StockModification:
+      - name: Health
+        valueMod: 0
+        value: -100
+        changeRateMod: 3
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0.1
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange: []
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: nothin
+        newsText: BubbleTeaCorp sits by passively as this pandemic covers the world
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: virus
+      newsText: A major virus outbreak has caused enforcement of social distancing
+        and quarantine
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: Mysterious offer
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Take the $5000
       weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
+      StockModification:
+      - name: Health
+        valueMod: 1
+        value: 1
+        changeRateMod: 1
+        changeRate: 1
+        DeltaMod: 1
+        changeRateDelta: 1
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2892,21 +3119,42 @@ MonoBehaviour:
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Offer
+        newsText: BubbleTeaCorp accepted the offer, surely nothing bad will happen
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Refuse the offer
+      weight: 1
+      StockModification: []
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange: []
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Refuse
+        newsText: BubbleTeaCorp refuses the offer, it might've been for the best
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: Offer
+      newsText: BubbleTeaCorp offered a generous gift of $5000 dollars, will they
+        accept
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: A gambler
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Heads
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2919,16 +3167,16 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
+      - name: Remove money
         value: 2000
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Lost
+        newsText: BubbleTeaCorp chose heads and lost!
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: Tails
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2941,50 +3189,36 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 6000
+      - name: Remove money
+        value: 2000
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Lost
+        newsText: BubbleTeaCorp chose tails and lost!
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: Gambler
+      newsText: A gambler approached BubbleTeaCorp asking to play a game of heads
+        or tails
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: Quiz
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: A bubble is whatever you want it to be
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Health
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 50
+        DeltaMod: 0
+        changeRateDelta: 1.2
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2994,19 +3228,24 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: answer
+        newsText: A bubble is whatever you want it to be
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: A bubble is a sphere of liquid and air
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Education
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 50
+        DeltaMod: 0
+        changeRateDelta: 1.4
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -3016,19 +3255,24 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: sphjere
+        newsText: A bubble is a sphere of liquid and air
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: A bubble is a product
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: BubbleTea
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 50
+        DeltaMod: 0
+        changeRateDelta: 1.3
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -3038,29 +3282,35 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: prdouct
+        newsText: A bubble is a product
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: Quiz
+      newsText: BubbleTeaCorp has been presented with a random quiz question "What
+        is a bubble?"
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: You've been asked to duel by a fighter
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Fight them
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Fitness
+        valueMod: 0
+        value: 40
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.4
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -3070,19 +3320,24 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: fight
+        newsText: BubbleTeaCorp's CEO fight the challenger
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire60
+    - EventIdentifier: Shoot them
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Defense
+        valueMod: 0
+        value: 40
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.4
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -3092,17 +3347,15 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: shoot
+        newsText: The challenger has been found dead in an alley
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: Dont respond
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -3114,1160 +3367,18 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: coward
+        newsText: BubbleTeaCorp's CEO is a coward
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire50
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 5000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: fight
+      newsText: BubbleTeaCorp has been officially challenged to a fight
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
   eventsThatHappened: []
