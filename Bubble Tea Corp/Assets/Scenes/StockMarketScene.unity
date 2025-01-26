@@ -1752,6 +1752,7 @@ MonoBehaviour:
         newsTitle: BubbleTeaCorp Medical Miracle
         newsText: BubbleTeaCorp invents a diabetes cure to allow more people to enjoy
           bubble tea!
+        numberOfTimesShownInNewsTicker: 0
     - EventIdentifier: Adjust your recipe
       weight: 1
       StockModification:
@@ -1779,6 +1780,7 @@ MonoBehaviour:
       newsEvent:
         newsTitle: BubbleTeaCorp changes their recipe
         newsText: The bubble tea recipe has been altered to have less sugar
+        numberOfTimesShownInNewsTicker: 0
     - EventIdentifier: Invest in education
       weight: 1
       StockModification:
@@ -1806,8 +1808,39 @@ MonoBehaviour:
       newsEvent:
         newsTitle: BubbleTeaCorp teaches the next generation
         newsText: Sources are saying they are teaching kids "Diabetes isn't real"
+        numberOfTimesShownInNewsTicker: 0
+    - EventIdentifier: Do nothing
+      weight: 1
+      StockModification:
+      - name: BubbleTea
+        valueMod: 0
+        value: -50
+        changeRateMod: 3
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: -1.1
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange: []
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: BubbleTeaCorp doesn't pay any mind to the epidemic
+        numberOfTimesShownInNewsTicker: 0
     flavourText: Diabetes epidemic
-  - ChoiceIdentifier: Layoffs
+    newsEvent:
+      newsTitle: Diabetes epidemic
+      newsText: The world is experiencing a diabetes epidemic
+      numberOfTimesShownInNewsTicker: 1
+  - ChoiceIdentifier: Lunch break strikes
     image: {fileID: 0}
     weight: 1
     events:
@@ -1874,10 +1907,10 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
-    flavourText: 
+    flavourText: Workers are striking for longer lunch breaks
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: Lunch strike
+      newsText: Workers are striking for longer lunch times
       numberOfTimesShownInNewsTicker: 0
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
