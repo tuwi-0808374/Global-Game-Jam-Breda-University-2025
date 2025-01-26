@@ -60,7 +60,7 @@ public class BubbleSpawners : MonoBehaviour
 
         // Reset the spawn timer
         timer = 0;
-        timeTilNextSpawn = UnityEngine.Random.Range(10,20);
+        timeTilNextSpawn = UnityEngine.Random.Range(7,10);
     }
 
     public void DestroyAllBubbes()
