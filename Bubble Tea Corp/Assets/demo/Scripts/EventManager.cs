@@ -78,6 +78,7 @@ public class NewsEvent
 }
 
 [System.Serializable]
+
 public class EventManager : MonoBehaviour
 {
     public StockMarket stockMarket;
@@ -93,6 +94,7 @@ public class EventManager : MonoBehaviour
 
     public GameObject eventHappendPrefab;
     public Transform eventHappendPrefabParent;
+    public AudioSource AudioComponent;
 
 
     public GameObject choiceButton;
@@ -250,6 +252,7 @@ public class EventManager : MonoBehaviour
         }
 
         choicePanel.SetActive(false);
+        AudioComponent.Play();
     }
 
     private void TriggerWorldEvent()
@@ -266,7 +269,7 @@ public class EventManager : MonoBehaviour
                     worldEvents.Add(e);
                 }
 
-                if (worldEvents.Count >= 5)
+                if (worldEvents.Count >= 90)
                 {
                     break;
                 }
@@ -276,7 +279,7 @@ public class EventManager : MonoBehaviour
             //int randomIndex = UnityEngine.Random.Range(0, events.Count);
             //Event chosenEvent = events[randomIndex];
 
-            Event chosenEvent = worldEvents[UnityEngine.Random.Range(0, 5)];
+            Event chosenEvent = worldEvents[UnityEngine.Random.Range(0, worldEvents.Count)];
             ProcessEvent(chosenEvent);
 
             if (chosenEvent.newsEvent != null)

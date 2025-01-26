@@ -13,6 +13,7 @@ public class BubbleComponent : MonoBehaviour
     private float upwardsspeed = 50f;
     public bool canPop = true;
     public GameObject particle;
+    public AudioSource AudioComponent;
 
 
     public Button button;
@@ -43,12 +44,18 @@ public class BubbleComponent : MonoBehaviour
         }
         Debug.Log("Pop!");
 
+        AudioComponent.Play();
         FindObjectOfType<BubbleSpawners>().spawnBubbles = false;
         FindObjectOfType<BubbleSpawners>().DestroyAllBubbes();
-        
 
-        EventManager eventManager = GameObject.Find("EventManager").GetComponent<EventManager>();
-        eventManager.TriggerChoice();
+
+
+            EventManager eventManager = FindObjectOfType<EventManager>();
+            if (eventManager)
+            {
+                eventManager.TriggerChoice();
+            }
+        
 
         DestroyMe();
     }

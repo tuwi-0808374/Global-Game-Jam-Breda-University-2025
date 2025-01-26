@@ -12,6 +12,7 @@ public class BubbleSpawners : MonoBehaviour
     public Transform right;
     public bool spawnBubbles = true;
 
+
     void Start()
     {
         timer = 0;
