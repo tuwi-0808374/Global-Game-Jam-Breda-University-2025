@@ -16,6 +16,9 @@ public class Choice
     public float weight;
     public List<Event> events;
     public string flavourText;
+
+    // Will be used for the news when this event happens.
+    public NewsEvent newsEvent;
 }
 
 [System.Serializable]
@@ -70,6 +73,7 @@ public class NewsEvent
 {
     public string newsTitle;
     public string newsText;
+    public int numberOfTimesShownInNewsTicker;
 }
 
 [System.Serializable]
@@ -209,6 +213,11 @@ public class EventManager : MonoBehaviour
             choiceButtonInstance.GetComponentInChildren<TMP_Text>().text = e.EventIdentifier;
             choiceButtonInstance.GetComponent<Button>().onClick.AddListener(() => MakeChoice(e));
         }
+
+        if (chosenChoice != null)
+        {
+            FindObjectOfType<NewsTicker>().AddNewItemToTicker(chosenChoice.newsEvent, chosenChoice.newsEvent.numberOfTimesShownInNewsTicker);
+        }
     }
 
     public void MakeChoice(Event e)
@@ -327,6 +336,11 @@ public class EventManager : MonoBehaviour
                     t.SetTrait(trait.value);
                 }
             }
+        }
+
+        if (chosenEvent.newsEvent != null)
+        {
+            FindObjectOfType<NewsTicker>().AddNewItemToTicker(chosenEvent.newsEvent, chosenEvent.newsEvent.numberOfTimesShownInNewsTicker);
         }
 
         // Add the chosen event to the list of events that happened
