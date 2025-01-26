@@ -505,12 +505,12 @@ MonoBehaviour:
     weight: 1
     StockModification:
     - name: Health
-      valueMod: 1
-      value: 0.1
-      changeRateMod: 1
-      changeRate: 10
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
       DeltaMod: 1
-      changeRateDelta: 1
+      changeRateDelta: -10
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
       name: 
@@ -529,15 +529,15 @@ MonoBehaviour:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: Colonpaperclip
+  - EventIdentifier: CryptoIncrease
     weight: 1
     StockModification:
-    - name: Health
-      valueMod: 0
-      value: -30
+    - name: Crypto
+      valueMod: 3
+      value: 0
       changeRateMod: 3
       changeRate: 0
-      DeltaMod: 3
+      DeltaMod: 0
       changeRateDelta: 100
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
@@ -550,572 +550,7 @@ MonoBehaviour:
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
-    FlavourText: 'A public service announcement from the hospital: "Do NOT put paperclips
-      inside of yourself, they WILL get stuck" (-Health)'
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoLaunch
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 0
-      value: 100
-      changeRateMod: 0
-      changeRate: 10
-      DeltaMod: 0
-      changeRateDelta: -1
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: A new crypto coing has gotten launched! (+Crypto)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: KanyePositive
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 0
-      value: 20
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0.5
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Kanye endorses Bubblecoin! (+Crypto)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: KanyeNegative
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 0
-      value: -20
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: -1
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Kanye endorses Bubblecoin! (-Crypto)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: RandomGuyOnStreet
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 0
-      value: 20
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0.5
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Random guy on street endorses Bubblecoin! (+Crypto)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: NFTRugPull
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 0
-      changeRate: -10
-      DeltaMod: 3
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Another NFT rugpull has taken place, it's making it seem like this
-      crypto thing is very unstable, weird isn't it? (-Crypto)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: BitCoinMiner
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 0
-      value: -50
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 3
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: A new game called Bubble Tea Corp. has been found to mine bitcoin
-      while active. Users are advised to remove this game from their computer. (-Crypto)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: ILoveGambling
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 0
-      changeRate: 10
-      DeltaMod: 0
-      changeRateDelta: 1
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Gambling has seen a global rise in popularity, logically so. Who
-      doesn't love gambling? (+Crypto)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoClip
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 0
-      value: -50
-      changeRateMod: 0
-      changeRate: -2
-      DeltaMod: 3
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Cryptocurrency has randomly started turning into paperclips. Nobody
-      knows why, but what the hell do we do with all these paperclips??? (-Crypto)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoCrash
-    weight: 10
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 1
-      changeRateDelta: -10
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: BubbleCoin Crashed!! We have no clue why but man thats a lot of
-      money gone. (Crypto Crash)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoCrash
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 1
-      changeRateDelta: -10
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: BubbleCoin Crashed!! We have no clue why but man thats a lot of
-      money gone. (Crypto Crash)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoCrash
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 1
-      changeRateDelta: -10
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: BubbleCoin Crashed!! We have no clue why but man thats a lot of
-      money gone. (Crypto Crash)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoCrash
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 1
-      changeRateDelta: -10
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: BubbleCoin Crashed!! We have no clue why but man thats a lot of
-      money gone. (Crypto Crash)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoCrash
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 1
-      changeRateDelta: -10
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: BubbleCoin Crashed!! We have no clue why but man thats a lot of
-      money gone. (Crypto Crash)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: MilitaryRations
-    weight: 1
-    StockModification:
-    - name: Defense
-      valueMod: 0
-      value: 20
-      changeRateMod: 0
-      changeRate: 20
-      DeltaMod: 3
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Bubble tea has been added to military rations. "Everybody knows
-      bubble tea is the most nutritious thing out there" (+Defense)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: BubbleBullets
-    weight: 1
-    StockModification:
-    - name: Defense
-      valueMod: 1
-      value: 0.1
-      changeRateMod: 1
-      changeRate: 10
-      DeltaMod: 1
-      changeRateDelta: 1
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: The switch to boba bullets has been a massive failure. Due to unknown
-      reasons enemy soldiers simply do not get hurt anymore. (Defense Crash)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: NationalSecurity
-    weight: 1
-    StockModification:
-    - name: Defense
-      valueMod: 3
-      value: 0
-      changeRateMod: 0
-      changeRate: -5
-      DeltaMod: 0
-      changeRateDelta: -1
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Bubble tea has been deemed "not essential" for national security.
-      (-Bubble tea)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CivilianProtection
-    weight: 1
-    StockModification:
-    - name: Defense
-      valueMod: 3
-      value: 0
-      changeRateMod: 0
-      changeRate: -10
-      DeltaMod: 3
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: The UN passed legislation protecting civilians during wartime. War
-      profits reduce massively as a consequence. (-Defense)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: PublicEnemy#1
-    weight: 1
-    StockModification:
-    - name: Defense
-      valueMod: 0
-      value: 100
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 1
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Some random nation has declared Bubble Tea Corp. enemy #1, prompting
-      a military response. This is amazing for weapons manufacturers. (+Defense)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: WorldWar3
-    weight: 1
-    StockModification:
-    - name: Defense
-      valueMod: 3
-      value: 0
-      changeRateMod: 0
-      changeRate: 10
-      DeltaMod: 0
-      changeRateDelta: 1
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Nations all over the world are fighting over Bubble Tea Corp. to
-      the point of threatening World War 3. (+Defense)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: Warthunder
-    weight: 1
-    StockModification:
-    - name: Defense
-      valueMod: 0
-      value: -50
-      changeRateMod: 3
-      changeRate: -10
-      DeltaMod: 0
-      changeRateDelta: -1
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Warthunder forums have once again leaked highly sensitive military
-      documents. (-Defense)
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: PaperClipGrenade
-    weight: 1
-    StockModification:
-    - name: Defense
-      valueMod: 3
-      value: 0
-      changeRateMod: 0
-      changeRate: 10
-      DeltaMod: 3
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: Frag grenades have been getting their fragmentation replaced with
-      paperclips. Luckily this has not decreased their effectiveness, so it's simply
-      cheaper! (+Defense)
+    FlavourText: crypto boom baybeeeeeeee
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
@@ -1256,33 +691,7 @@ MonoBehaviour:
     - name: Crypto
       valueMod: 3
       value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 0
+      changeRateMod: 3
       changeRate: 0
       DeltaMod: 0
       changeRateDelta: 100
@@ -1720,48 +1129,13 @@ MonoBehaviour:
       numberOfTimesShownInNewsTicker: 0
   eventsCopied: []
   choices:
-  - ChoiceIdentifier: Diabetes
+  - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Invest in a cure
+    - EventIdentifier: Fire20
       weight: 1
-      StockModification:
-      - name: Bubble Tea
-        valueMod: 3
-        value: 0
-        changeRateMod: 0
-        changeRate: 15
-        DeltaMod: 0
-        changeRateDelta: 1.5
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Remove money
-        value: 500
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: BubbleTeaCorp Medical Miracle
-        newsText: BubbleTeaCorp invents a diabetes cure to allow more people to enjoy
-          bubble tea!
-    - EventIdentifier: Adjust your recipe
-      weight: 1
-      StockModification:
-      - name: Health
-        valueMod: 3
-        value: 0
-        changeRateMod: 0
-        changeRate: 10
-        DeltaMod: 0
-        changeRateDelta: 1.3
+      StockModification: []
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -1773,22 +1147,16 @@ MonoBehaviour:
         changeRateDelta: 0
       traitsToChange:
       - name: Add money
-        value: 200
+        value: 2000
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: BubbleTeaCorp changes their recipe
-        newsText: The bubble tea recipe has been altered to have less sugar
-    - EventIdentifier: Invest in education
+        newsTitle: 
+        newsText: 
+        numberOfTimesShownInNewsTicker: 0
+    - EventIdentifier: Fire60
       weight: 1
-      StockModification:
-      - name: Education
-        valueMod: 0
-        value: 50
-        changeRateMod: 0
-        changeRate: 10
-        DeltaMod: 0
-        changeRateDelta: 1.5
+      StockModification: []
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -1799,14 +1167,40 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Remove money
-        value: 750
+      - name: Add money
+        value: 6000
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: BubbleTeaCorp teaches the next generation
-        newsText: Sources are saying they are teaching kids "Diabetes isn't real"
-    flavourText: Diabetes epidemic
+        newsTitle: 
+        newsText: 
+        numberOfTimesShownInNewsTicker: 0
+    - EventIdentifier: Fire50
+      weight: 1
+      StockModification: []
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Add money
+        value: 5000
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: 
+        newsText: 
+        numberOfTimesShownInNewsTicker: 0
+    flavourText: 
+    newsEvent:
+      newsTitle: 
+      newsText: 
+      numberOfTimesShownInNewsTicker: 0
   - ChoiceIdentifier: Layoffs
     image: {fileID: 0}
     weight: 1
@@ -4595,7 +3989,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5664,107 +5058,10 @@ MonoBehaviour:
   canvas: {fileID: 1789946138}
   mainPanel: {fileID: 463051663}
   spawnPoint: {x: 0, y: 0, z: 0}
-  timeTilNextSpawn: 8
+  timeTilNextSpawn: 1
   left: {fileID: 2093521195}
   right: {fileID: 745614035}
   spawnBubbles: 1
---- !u!1001 &1991758779
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7709220249775079744, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
-      propertyPath: m_Name
-      value: Canvas NewsTicker
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
 --- !u!1 &2053151982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6038,6 +5335,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112393465}
   m_CullTransparentMesh: 1
+--- !u!1001 &3498358855537822441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475177662249599592, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709220249775079744, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
+      propertyPath: m_Name
+      value: Canvas NewsTicker
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f48a6d52a288e094183498cdc1676c4d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -6051,4 +5445,4 @@ SceneRoots:
   - {fileID: 588156865}
   - {fileID: 639738788}
   - {fileID: 330761696}
-  - {fileID: 1991758779}
+  - {fileID: 3498358855537822441}
