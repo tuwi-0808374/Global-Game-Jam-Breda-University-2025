@@ -38,6 +38,13 @@ public class NewsTicker : MonoBehaviour
 
     public void AddNewItemToTicker(NewsEvent newsEvent, int howMany)
     {
+
+        Debug.Log("Adding " + howMany + " news events to the ticker");
+        if (howMany < 1)
+        {
+            howMany = 2;
+        }
+
         // Add X number of news events based on the howMany parameter, but every time in between existing news events
         for (int i = 0; i < howMany; i++)
         {
