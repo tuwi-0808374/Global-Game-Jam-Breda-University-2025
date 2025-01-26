@@ -4,6 +4,7 @@ using System.Linq;
 using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.VirtualTexturing;
 using UnityEngine.UI;
@@ -46,6 +47,8 @@ public class StockMarket : MonoBehaviour
     public GameObject StockItemPrefab; // Prefab for a stock item in the UI
     public Transform StockListContainer; // Parent container for stock items
     public TextMeshProUGUI PlayerMoneyText; // Text element to display player's money
+
+    public EventManager eventManager;
 
     void Start()
     {
@@ -101,6 +104,20 @@ public class StockMarket : MonoBehaviour
             stock.ChangeRate += stock.ChangeRateDelta;
             stock.CurrentPrice += stock.ChangeRate + UnityEngine.Random.Range(-1,1 );
             stock.CurrentPrice = Mathf.Clamp(stock.CurrentPrice, 0.1f,1000000000000.0f); // Prevent negative prices
+
+            if (stock.CurrentPrice <= 0.2)
+            {
+                foreach (Event e in eventManager.events)
+                {
+                    foreach (StockChange stockModification in e.StockModification)
+                    {
+                        if (stockModification.name == stock.Name && stockModification.elapsedTimeCrash.IsUnityNull())
+                        {
+                            stockModification.elapsedTimeCrash = eventManager.GetElapsedTime();
+                        }
+                    }
+                }
+            }
 
             //Figure out which stock we are updating
             int TargetStockIndex = Stocks.FindIndex(x => x.Name == stock.Name);

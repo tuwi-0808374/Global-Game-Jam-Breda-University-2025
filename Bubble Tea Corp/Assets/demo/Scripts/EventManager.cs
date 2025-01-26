@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.MPE;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
+using static StockMarket;
 
 [System.Serializable]
 public class Choice
@@ -22,13 +24,14 @@ public class Event
     public string EventIdentifier;
     public float weight;
     public List<StockChange> StockModification;
+    public string Afterdelay = "This text is a spacer";
+    public List<StockChange> StockModificationAfterDelay;
     public List<Traits> traitsToChange;
     public List<WeightToGive> OtherEventWeightModifiers;
     public string FlavourText;
 
     // Will be used for the news when this event happens.
     public NewsEvent newsEvent;
-
 }
 [System.Serializable]
 public class WeightToGive
@@ -46,6 +49,7 @@ public class StockChange
     public float changeRate;
     public StockMarket.StockMods DeltaMod;
     public float changeRateDelta;
+    public float? elapsedTimeCrash;
 }
 
 [System.Serializable]
@@ -74,7 +78,7 @@ public class EventManager : MonoBehaviour
     public StockMarket stockMarket;
 
     private float elapsedTime;
-    private float interval = 1.0f;
+    private float interval = 10.0f;
     //private float elapsedTimeChoice;
     //private float intervalChoice = 5.0f;
     public bool pauseWorldEvents = false;
@@ -93,15 +97,18 @@ public class EventManager : MonoBehaviour
 
 
     public List<Event> events;
+    public List<Event> eventsCopied;
     public List<Choice> choices;
 
     public List<Event> eventsThatHappened = new List<Event>();
     public List<Choice> choicesMade = new List<Choice>();
     public List<Traits> traits = new List<Traits>();
 
+    public float crashRecoveryDelay = 10;
+
     private void Start()
     {
-        
+        eventsCopied = new List<Event>(events);
         //EventData eventData = new EventData();
         //eventData.FIllList();
         //events = eventData.events;
@@ -125,6 +132,21 @@ public class EventManager : MonoBehaviour
                 TriggerWorldEvent();
             }
 
+        }
+
+        foreach (Event e in events)
+        {
+            foreach (StockChange stockModification in e.StockModification)
+            {
+                if (!stockModification.elapsedTimeCrash.IsUnityNull())
+                {
+                    float timeSinceCrash = (float)(elapsedTime - stockModification.elapsedTimeCrash);
+                    if (timeSinceCrash >= crashRecoveryDelay)
+                    {
+                        stockMarket.UpdateStock(stock.name, stock.valueMod, stock.value, stock.changeRateMod, stock.changeRate, stock.DeltaMod, stock.changeRateDelta);
+                    }    
+                }
+            }
         }
 
         //if (choiceTimeElapsed <= 0)
@@ -250,6 +272,10 @@ public class EventManager : MonoBehaviour
 
             // Trigger the chosen event (for now, just log it)
             //Debug.Log($"Event triggered: {chosenEvent.name}");
+        }
+        else
+        {
+            events = new List<Event>(eventsCopied);
         }
     }
 
