@@ -10,7 +10,7 @@ public class BubbleComponent : MonoBehaviour
     private float sway = 0;
     private float swaydivide = 0.1f;
     private float startbounds = 890;
-    private float upwardsspeed = 15f;
+    private float upwardsspeed = 50f;
     public bool canPop = true;
     public GameObject particle;
 
