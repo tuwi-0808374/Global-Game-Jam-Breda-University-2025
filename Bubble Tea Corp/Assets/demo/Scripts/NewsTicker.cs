@@ -42,12 +42,17 @@ public class NewsTicker : MonoBehaviour
     {
 
         Debug.Log("Adding " + howMany + " news events to the ticker");
-        //newsEvents.Add(newsEvent)
-        //if (newsEvents.Count<=1){
-            //NewsEvent news = new NewsEvent();
-            //news.newsTitle = "breaking news";
-            //newsEvents.
-        //}
+
+        newsEvents.Add(newsEvent);
+        if (newsEvents.Count <= 1)
+            {
+                NewsEvent news = new NewsEvent();
+                news.newsTitle = "breaking news";
+                newsEvents.Add(news);
+                news = new NewsEvent();
+                news.newsTitle = "CNN";
+                newsEvents.Add(news);
+        }
         // if (howMany < 1)
         // {
         //     howMany = 2;
