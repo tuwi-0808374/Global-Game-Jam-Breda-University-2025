@@ -203,7 +203,7 @@ public class StockMarket : MonoBehaviour
     void UpdateUI()
     {
         // Update player money display
-        PlayerMoneyText.text = $"Cash: ${PlayerMoney:F2}  Stock portfolio: {CalculateNetWorth():F2}";
+        PlayerMoneyText.text = $"Cash: {PlayerMoney:F2}  Stock portfolio: {CalculateNetWorth():F2}";
 
         // Update stock list
         for (int i = 0; i < StockListContainer.childCount; i++)
