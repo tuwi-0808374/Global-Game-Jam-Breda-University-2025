@@ -288,7 +288,12 @@ public class EventManager : MonoBehaviour
             }
 
             GameObject eventHappendLog = Instantiate(eventHappendPrefab, eventHappendPrefabParent);
-            eventHappendLog.GetComponentInChildren<TMP_Text>().text = chosenEvent.EventIdentifier;
+            string s = chosenEvent.EventIdentifier;
+            if (chosenEvent.newsEvent != null && chosenEvent.newsEvent.newsTitle != "")
+            {
+                s = chosenEvent.newsEvent.newsTitle;
+            }
+            eventHappendLog.GetComponentInChildren<TMP_Text>().text = s;
             if (eventHappendPrefabParent.childCount > 10)
             {
                 Destroy(eventHappendPrefabParent.GetChild(0).gameObject);
