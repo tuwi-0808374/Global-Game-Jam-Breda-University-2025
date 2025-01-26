@@ -1272,10 +1272,7 @@ MonoBehaviour:
         paperclips. Luckily this has not decreased their effectiveness, so it's simply
         cheaper! (+Defense)
       numberOfTimesShownInNewsTicker: 0
-<<<<<<< Updated upstream
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-=======
   - EventIdentifier: WorldPeace
     weight: 1
     StockModification:
@@ -1304,6 +1301,7 @@ MonoBehaviour:
       newsText: After a lot of fighting a peace treaty a massive peace treaty has
         been signed ending all conflicts in the world! (Defense crash)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: DoubleBars
     weight: 1
     StockModification:
@@ -1332,6 +1330,7 @@ MonoBehaviour:
       newsText: A second layer of bars has been added to all prison cells, making
         them more effective at keeping prisoners in! (+Prison)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: MandatorySentence
     weight: 1
     StockModification:
@@ -1360,8 +1359,8 @@ MonoBehaviour:
       newsText: A new law has passed that introduces a minimum mandatory sentence.
         (+Prison)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: DenyDefendDepose
->>>>>>> Stashed changes
     weight: 1
     StockModification:
     - name: Crypto
@@ -1389,10 +1388,7 @@ MonoBehaviour:
       newsText: A notorious CEO assassin receives a warm welcome from inmates on
         his first day in maximum security (-Prison)
       numberOfTimesShownInNewsTicker: 0
-<<<<<<< Updated upstream
       image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-=======
   - EventIdentifier: PrisonBreak
     weight: 1
     StockModification:
@@ -1423,6 +1419,7 @@ MonoBehaviour:
         a lot of prisoners escape. "There was no way to see this coming" says prison
         warden. (Prison crash)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: NewShank
     weight: 1
     StockModification:
@@ -1451,6 +1448,7 @@ MonoBehaviour:
       newsText: Prisoners have invented a new type of shank, guards get hurt a bunch
         (-Prison)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: IllegalHomeless
     weight: 1
     StockModification:
@@ -1479,6 +1477,7 @@ MonoBehaviour:
       newsText: New laws now make homelessness illegal. In unrelated news the private
         prison business is on the rise! (+Prison)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: Slavery
     weight: 1
     StockModification:
@@ -1507,8 +1506,8 @@ MonoBehaviour:
       newsText: The question of prisoner rights has finally been settled. Prisoners
         are not people, and can be put to work without pay (+Prison)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: HungryPrisoners
->>>>>>> Stashed changes
     weight: 1
     StockModification:
     - name: Crypto
@@ -1536,6 +1535,7 @@ MonoBehaviour:
       newsText: Prisoners have managed to make a case for food being a basic right,
         this will cut into prison profits massively (-Prison)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: Johny'sCell
     weight: 1
     StockModification:
@@ -1564,123 +1564,127 @@ MonoBehaviour:
       newsText: New prison designs are even more space efficient. Now only 1 square
         meter per prisoner! (+Prison)
       numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
   - EventIdentifier: BubbleTeaMandatory
     weight: 1
     StockModification:
     - name: Prison
       valueMod: 3
       value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-<<<<<<< Updated upstream
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
       changeRateMod: 0
-      changeRate: 0
+      changeRate: 5
       DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-=======
       changeRateDelta: 2
     - name: BubbleTea
->>>>>>> Stashed changes
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 5
+      DeltaMod: 3
+      changeRateDelta: 0
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Bubble Tea dislikes illegal
+      newsText: Dislike of bubble tea has now been made illegal. Many question why
+        this did not happen sooner. (+Prison)
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 3
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 100
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
       valueMod: 3
       value: 0
       changeRateMod: 0
@@ -1701,7 +1705,6 @@ MonoBehaviour:
     FlavourText: A dislike of bubble tea has now been made illegal. Many question
       why this didn't happen any sooner. (+Prison)
     newsEvent:
-<<<<<<< Updated upstream
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
       numberOfTimesShownInNewsTicker: 0
@@ -1839,11 +1842,6 @@ MonoBehaviour:
     newsEvent:
       newsTitle: Crypto Stock Increase
       newsText: Crypto stock increased by 1.0
-=======
-      newsTitle: Bubble tea dislike is now illegal!
-      newsText: A dislike of bubble tea has now been made illegal. Many question
-        why this didn't happen any sooner. (+Prison)
->>>>>>> Stashed changes
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
   - EventIdentifier: CryptoIncrease
