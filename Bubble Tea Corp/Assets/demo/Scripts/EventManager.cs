@@ -83,7 +83,7 @@ public class EventManager : MonoBehaviour
     public StockMarket stockMarket;
 
     private float elapsedTime;
-    private float interval = 10.0f;
+    private float interval = 1f;
     //private float elapsedTimeChoice;
     //private float intervalChoice = 5.0f;
     public bool pauseWorldEvents = false;
@@ -132,6 +132,7 @@ public class EventManager : MonoBehaviour
             {
                 // Reset elapsed time
                 elapsedTime = 0f;
+                interval = UnityEngine.Random.Range(10, 20);
 
                 // Trigger a random event from the list
                 TriggerWorldEvent();
