@@ -1931,16 +1931,7 @@ MonoBehaviour:
         newsText: BubbleTeaCorp gives staff a day off and plans a trip to a theme
           park!
         numberOfTimesShownInNewsTicker: 1
-    flavourText: Workers are striking for longer lunch breaks
-    newsEvent:
-      newsTitle: Lunch strike
-      newsText: Workers are striking for longer lunch times
-      numberOfTimesShownInNewsTicker: 0
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Do nothing
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -1952,15 +1943,44 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
+        newsTitle: ignore
+        newsText: BubbleTeaCorp ignores worker demands
+        numberOfTimesShownInNewsTicker: 1
+    flavourText: Workers are striking for longer lunch breaks
+    newsEvent:
+      newsTitle: Lunch strike
+      newsText: Workers are striking for longer lunch times
+      numberOfTimesShownInNewsTicker: 0
+  - ChoiceIdentifier: Charity campaign
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Discourage competition from joining -$500
+      weight: 1
+      StockModification: []
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: Defense
+        valueMod: 3
+        value: 0
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.5
+      traitsToChange:
+      - name: Remove money
+        value: 500
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Discourage
+        newsText: BubbleTeaCorps threatens competition with tanks to stop them from
+          donating to charity
+        numberOfTimesShownInNewsTicker: 1
     - EventIdentifier: Fire60
       weight: 1
       StockModification: []
@@ -2003,6 +2023,25 @@ MonoBehaviour:
         newsTitle: 
         newsText: 
         numberOfTimesShownInNewsTicker: 0
+    - EventIdentifier: Do nothing
+      weight: 1
+      StockModification: []
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange: []
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Ignore
+        newsText: BubbleTeaCorp abstains from joining the charity event
+        numberOfTimesShownInNewsTicker: 1
     flavourText: 
     newsEvent:
       newsTitle: 
