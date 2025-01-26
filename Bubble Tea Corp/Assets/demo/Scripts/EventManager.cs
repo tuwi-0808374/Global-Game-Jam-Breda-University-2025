@@ -315,6 +315,11 @@ public class EventManager : MonoBehaviour
                 stockMarket.PlayerMoney += trait.value;
             }
 
+            if (trait.name == "Remove money")
+            {
+                stockMarket.PlayerMoney -= trait.value;
+            }
+
             foreach (Traits t in traits)
             {
                 if (t.name == trait.name)
