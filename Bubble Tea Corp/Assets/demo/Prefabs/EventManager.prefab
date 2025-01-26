@@ -2071,9 +2071,9 @@ MonoBehaviour:
         valueMod: 3
         value: 0
         changeRateMod: 0
-        changeRate: 0
+        changeRate: 10
         DeltaMod: 0
-        changeRateDelta: 0
+        changeRateDelta: 1.5
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2085,17 +2085,25 @@ MonoBehaviour:
         changeRateDelta: 0
       traitsToChange:
       - name: Add money
-        value: 6000
+        value: 750
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Sell merch
+        newsText: BubbleTeaCorp sets up a merch stand at charity event (0% goes to
+          charity)
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    - EventIdentifier: Fire50
+    - EventIdentifier: Donate to the charity -$1000
       weight: 1
-      StockModification: []
+      StockModification:
+      - name: Charity
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.2
       Afterdelay: This text is a spacer
       StockModificationAfterDelay:
         name: 
@@ -2106,13 +2114,13 @@ MonoBehaviour:
         DeltaMod: 0
         changeRateDelta: 0
       traitsToChange:
-      - name: Add money
-        value: 5000
+      - name: Remove money
+        value: 1000
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
-        newsText: 
+        newsTitle: Donate
+        newsText: BubbleTeaCorp donates large sum to charity!
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
     - EventIdentifier: Do nothing
@@ -2137,15 +2145,101 @@ MonoBehaviour:
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: Charity
+      newsText: Big Charity holds a campaign to gather money for those in need
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
+  - ChoiceIdentifier: New element discovered
     image: {fileID: 0}
     weight: 1
     events:
-    - EventIdentifier: Fire20
+    - EventIdentifier: Use the element to make a weapon -$1500
+      weight: 1
+      StockModification:
+      - name: Defense
+        valueMod: 3
+        value: 0
+        changeRateMod: 0
+        changeRate: 30
+        DeltaMod: 0
+        changeRateDelta: 2
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Remove money
+        value: 1500
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Weapon
+        newsText: 'BubbleTeaCorp makes a weapon with the new element causing fear
+          in the industry '
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Use the element to make a new menu item -$500
+      weight: 1
+      StockModification:
+      - name: BubbleTea
+        valueMod: 0
+        value: 50
+        changeRateMod: 0
+        changeRate: 20
+        DeltaMod: 0
+        changeRateDelta: 1.3
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Remove money
+        value: 500
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Recipe
+        newsText: BubbleTeaCorp invents a new recipe item using weird new element
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Teach people it's toxic
+      weight: 1
+      StockModification:
+      - name: Education
+        valueMod: 0
+        value: 30
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.2
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange: []
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Teach
+        newsText: BubbleTeaCorp says the newly discovered element is toxic
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    - EventIdentifier: Do nothing
       weight: 1
       StockModification: []
       Afterdelay: This text is a spacer
@@ -2157,13 +2251,50 @@ MonoBehaviour:
         changeRate: 0
         DeltaMod: 0
         changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
+      traitsToChange: []
       OtherEventWeightModifiers: []
       FlavourText: 
       newsEvent:
-        newsTitle: 
+        newsTitle: Nothing
+        newsText: BubbleTeaCorp pays no mind to the new element
+        numberOfTimesShownInNewsTicker: 0
+        image: {fileID: 0}
+    flavourText: 
+    newsEvent:
+      newsTitle: New element
+      newsText: Scientists have discovered a new element
+      numberOfTimesShownInNewsTicker: 0
+      image: {fileID: 0}
+  - ChoiceIdentifier: A competitor is selling merch
+    image: {fileID: 0}
+    weight: 1
+    events:
+    - EventIdentifier: Deploy a virus to sabotage the competition -$750
+      weight: 1
+      StockModification:
+      - name: Health
+        valueMod: 0
+        value: 20
+        changeRateMod: 0
+        changeRate: 10
+        DeltaMod: 0
+        changeRateDelta: 1.5
+      Afterdelay: This text is a spacer
+      StockModificationAfterDelay:
+        name: 
+        valueMod: 0
+        value: 0
+        changeRateMod: 0
+        changeRate: 0
+        DeltaMod: 0
+        changeRateDelta: 0
+      traitsToChange:
+      - name: Remove money
+        value: 750
+      OtherEventWeightModifiers: []
+      FlavourText: 
+      newsEvent:
+        newsTitle: Virus
         newsText: 
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
@@ -2211,60 +2342,6 @@ MonoBehaviour:
         newsText: 
         numberOfTimesShownInNewsTicker: 0
         image: {fileID: 0}
-    flavourText: 
-    newsEvent:
-      newsTitle: 
-      newsText: 
-      numberOfTimesShownInNewsTicker: 0
-      image: {fileID: 0}
-  - ChoiceIdentifier: Layoffs
-    image: {fileID: 0}
-    weight: 1
-    events:
-    - EventIdentifier: Fire20
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 2000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
-    - EventIdentifier: Fire60
-      weight: 1
-      StockModification: []
-      Afterdelay: This text is a spacer
-      StockModificationAfterDelay:
-        name: 
-        valueMod: 0
-        value: 0
-        changeRateMod: 0
-        changeRate: 0
-        DeltaMod: 0
-        changeRateDelta: 0
-      traitsToChange:
-      - name: Add money
-        value: 6000
-      OtherEventWeightModifiers: []
-      FlavourText: 
-      newsEvent:
-        newsTitle: 
-        newsText: 
-        numberOfTimesShownInNewsTicker: 0
-        image: {fileID: 0}
     - EventIdentifier: Fire50
       weight: 1
       StockModification: []
@@ -2289,8 +2366,8 @@ MonoBehaviour:
         image: {fileID: 0}
     flavourText: 
     newsEvent:
-      newsTitle: 
-      newsText: 
+      newsTitle: Merch sold
+      newsText: A competitor to BubbleTeaCorp is selling merch at a nearby town fair
       numberOfTimesShownInNewsTicker: 0
       image: {fileID: 0}
   - ChoiceIdentifier: Layoffs
