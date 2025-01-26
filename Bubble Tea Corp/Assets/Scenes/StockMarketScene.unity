@@ -1205,7 +1205,6 @@ MonoBehaviour:
     StockModificationAfterDelay:
       name: 
       valueMod: 0
-<<<<<<< Updated upstream
       value: 0
       changeRateMod: 0
       changeRate: 0
@@ -1222,13 +1221,35 @@ MonoBehaviour:
     StockModification:
     - name: Crypto
       valueMod: 3
-=======
->>>>>>> Stashed changes
       value: 0
       changeRateMod: 0
       changeRate: 0
       DeltaMod: 0
-<<<<<<< Updated upstream
+      changeRateDelta: 100
+    Afterdelay: This text is a spacer
+    StockModificationAfterDelay:
+      name: 
+      valueMod: 0
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
+      changeRateDelta: 0
+    traitsToChange: []
+    OtherEventWeightModifiers: []
+    FlavourText: crypto boom baybeeeeeeee
+    newsEvent:
+      newsTitle: Crypto Stock Increase
+      newsText: Crypto stock increased by 1.0
+  - EventIdentifier: CryptoIncrease
+    weight: 1
+    StockModification:
+    - name: Crypto
+      valueMod: 3
+      value: 0
+      changeRateMod: 0
+      changeRate: 0
+      DeltaMod: 0
       changeRateDelta: 100
     Afterdelay: This text is a spacer
     StockModificationAfterDelay:
@@ -1638,33 +1659,6 @@ MonoBehaviour:
       changeRateMod: 0
       changeRate: 0
       DeltaMod: 0
-      changeRateDelta: 0
-    traitsToChange: []
-    OtherEventWeightModifiers: []
-    FlavourText: crypto boom baybeeeeeeee
-    newsEvent:
-      newsTitle: Crypto Stock Increase
-      newsText: Crypto stock increased by 1.0
-  - EventIdentifier: CryptoIncrease
-    weight: 1
-    StockModification:
-    - name: Crypto
-      valueMod: 3
-      value: 0
-      changeRateMod: 3
-      changeRate: 0
-      DeltaMod: 0
-      changeRateDelta: 100
-    Afterdelay: This text is a spacer
-    StockModificationAfterDelay:
-      name: 
-      valueMod: 0
-      value: 0
-      changeRateMod: 0
-      changeRate: 0
-      DeltaMod: 0
-=======
->>>>>>> Stashed changes
       changeRateDelta: 0
     traitsToChange: []
     OtherEventWeightModifiers: []
