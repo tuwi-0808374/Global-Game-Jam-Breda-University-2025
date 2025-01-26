@@ -34,7 +34,8 @@ public class ChoiceNewsBox : MonoBehaviour
         if (!panel.activeInHierarchy)
         {
             panel.SetActive(true);
-            tmpText.text = newsEvent.newsText;
         }
+
+        tmpText.text = newsEvent.newsText;
     }
 }
